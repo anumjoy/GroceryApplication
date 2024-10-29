@@ -15,7 +15,7 @@ public class ExcelUtility {
 	static XSSFSheet sh;
 	
 	//method1 -reading string -Valid Credentials
-		public static String getStringData(int a,int b) throws IOException {
+		public static synchronized  String getStringData(int a,int b) throws IOException {
 			f=new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\resources\\Excel\\ValidCredentials.xlsx");			
 			wb=new XSSFWorkbook(f);
 			sh=wb.getSheet("Sheet1"); 
@@ -24,7 +24,7 @@ public class ExcelUtility {
 			return c.getStringCellValue();
 		}
 		//InValid Credentials
-				public static String getInvalidStringData(int a,int b) throws IOException {
+				public static synchronized  String getInvalidStringData(int a,int b) throws IOException {
 					f=new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\resources\\Excel\\InvalidCredentials.xlsx"); 
 					wb=new XSSFWorkbook(f);
 					sh=wb.getSheet("Sheet1"); 
@@ -35,14 +35,12 @@ public class ExcelUtility {
 		
 	//method2 -reading Numeric
 		public static int getNumericData(int a,int b) throws IOException {
-			//f=new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\resources\\Excel\\ValidCredentials.xlsx");
-			f=new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\resources\\Excel\\InvalidCredentials.xlsx");
+			f=new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\resources\\Excel\\ValidCredentials.xlsx");			
 			wb=new XSSFWorkbook(f);
 			sh=wb.getSheet("Sheet1");
 			Row r=sh.getRow(a);
 			Cell c=r.getCell(b);
-			int x=(int)c.getNumericCellValue(); 
-			//return c.getNumericCellValue();
+			int x=(int)c.getNumericCellValue();			
 			return x; 
 		}
 }

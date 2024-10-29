@@ -2,7 +2,13 @@
 	<test name="ChromeTest">
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
-			<class name="testCase.AdminUsersTest"></class>		
+			<class name="testCase.LogInPageTest"></class>					
+		</classes>
+	</test>
+	<test name="FirefoxTest">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="testCase.LogInPageTest"></class>					
 		</classes>
 	</test>
 </suite>

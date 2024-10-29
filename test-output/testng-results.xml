@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="6" passed="4" failed="0" skipped="0">
+<testng-results ignored="2" total="8" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-29T09:49:50 EDT" name="GroceryApplication" finished-at="2024-10-29T09:50:08 EDT" duration-ms="18208">
+  <suite started-at="2024-10-29T10:28:18 EDT" name="GroceryApplication" finished-at="2024-10-29T10:28:39 EDT" duration-ms="20891">
     <groups>
-      <group name="smoke">
-        <method signature="AdminUsersTest.verifyAddAdminUsers()[pri:0, instance:testCase.AdminUsersTest@4c398c80]" name="verifyAddAdminUsers" class="testCase.AdminUsersTest"/>
-        <method signature="ManageContactTest.editContact()[pri:0, instance:testCase.ManageContactTest@13cf7d52]" name="editContact" class="testCase.ManageContactTest"/>
-        <method signature="AdminUsersTest.verifyAddAdminUsers()[pri:0, instance:testCase.AdminUsersTest@19ae6bb]" name="verifyAddAdminUsers" class="testCase.AdminUsersTest"/>
-        <method signature="ManageContactTest.editContact()[pri:0, instance:testCase.ManageContactTest@5af3a0f]" name="editContact" class="testCase.ManageContactTest"/>
-      </group> <!-- smoke -->
     </groups>
-    <test started-at="2024-10-29T09:49:50 EDT" name="ChromeTest" finished-at="2024-10-29T09:50:04 EDT" duration-ms="13917">
-      <class name="testCase.ManageContactTest">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageContactTest@13cf7d52]" started-at="2024-10-29T09:49:50 EDT" name="beforeMethod" finished-at="2024-10-29T09:49:54 EDT" duration-ms="3788" status="PASS">
+    <test started-at="2024-10-29T10:28:18 EDT" name="ChromeTest" finished-at="2024-10-29T10:28:32 EDT" duration-ms="13317">
+      <class name="testCase.LogInPageTest">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LogInPageTest@4f2b503c]" started-at="2024-10-29T10:28:20 EDT" name="beforeMethod" finished-at="2024-10-29T10:28:23 EDT" duration-ms="3403" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -24,24 +18,34 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="editContact()[pri:0, instance:testCase.ManageContactTest@13cf7d52]" started-at="2024-10-29T09:49:54 EDT" name="editContact" finished-at="2024-10-29T09:49:57 EDT" duration-ms="3647" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- editContact -->
-        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageContactTest@13cf7d52]" started-at="2024-10-29T09:49:57 EDT" name="afterMethode" finished-at="2024-10-29T09:49:57 EDT" duration-ms="163" status="PASS">
+        <test-method signature="verifyLogInWithExcelData(java.lang.String,java.lang.String)[pri:0, instance:testCase.LogInPageTest@4f2b503c]" started-at="2024-10-29T10:28:23 EDT" name="verifyLogInWithExcelData" data-provider="excelDataProvider" finished-at="2024-10-29T10:28:24 EDT" duration-ms="734" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=editContact status=SUCCESS method=ManageContactTest.editContact()[pri:0, instance:testCase.ManageContactTest@13cf7d52] output={null}]]]>
+                <![CDATA[admininvalid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogInWithExcelData -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.LogInPageTest@4f2b503c]" started-at="2024-10-29T10:28:24 EDT" name="afterMethode" finished-at="2024-10-29T10:28:24 EDT" duration-ms="170" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLogInWithExcelData status=SUCCESS method=LogInPageTest.verifyLogInWithExcelData(java.lang.String,java.lang.String)[pri:0, instance:testCase.LogInPageTest@4f2b503c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethode -->
-      </class> <!-- testCase.ManageContactTest -->
-      <class name="testCase.AdminUsersTest">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.AdminUsersTest@4c398c80]" started-at="2024-10-29T09:49:57 EDT" name="beforeMethod" finished-at="2024-10-29T09:50:00 EDT" duration-ms="2755" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LogInPageTest@4f2b503c]" started-at="2024-10-29T10:28:24 EDT" name="beforeMethod" finished-at="2024-10-29T10:28:27 EDT" duration-ms="2921" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -52,26 +56,64 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyAddAdminUsers()[pri:0, instance:testCase.AdminUsersTest@4c398c80]" started-at="2024-10-29T09:50:00 EDT" name="verifyAddAdminUsers" finished-at="2024-10-29T09:50:03 EDT" duration-ms="3169" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddAdminUsers -->
-        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.AdminUsersTest@4c398c80]" started-at="2024-10-29T09:50:03 EDT" name="afterMethode" finished-at="2024-10-29T09:50:04 EDT" duration-ms="186" status="PASS">
+        <test-method signature="verifyLogInWithExcelData(java.lang.String,java.lang.String)[pri:0, instance:testCase.LogInPageTest@4f2b503c]" started-at="2024-10-29T10:28:27 EDT" name="verifyLogInWithExcelData" data-provider="excelDataProvider" finished-at="2024-10-29T10:28:27 EDT" duration-ms="539" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyAddAdminUsers status=SUCCESS method=AdminUsersTest.verifyAddAdminUsers()[pri:0, instance:testCase.AdminUsersTest@4c398c80] output={null}]]]>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogInWithExcelData -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.LogInPageTest@4f2b503c]" started-at="2024-10-29T10:28:27 EDT" name="afterMethode" finished-at="2024-10-29T10:28:28 EDT" duration-ms="214" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLogInWithExcelData status=SUCCESS method=LogInPageTest.verifyLogInWithExcelData(java.lang.String,java.lang.String)[pri:0, instance:testCase.LogInPageTest@4f2b503c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethode -->
-      </class> <!-- testCase.AdminUsersTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LogInPageTest@4f2b503c]" started-at="2024-10-29T10:28:28 EDT" name="beforeMethod" finished-at="2024-10-29T10:28:30 EDT" duration-ms="2719" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyLogInWithValidData()[pri:0, instance:testCase.LogInPageTest@4f2b503c]" started-at="2024-10-29T10:28:30 EDT" name="verifyLogInWithValidData" finished-at="2024-10-29T10:28:31 EDT" duration-ms="1011" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogInWithValidData -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.LogInPageTest@4f2b503c]" started-at="2024-10-29T10:28:31 EDT" name="afterMethode" finished-at="2024-10-29T10:28:32 EDT" duration-ms="211" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLogInWithValidData status=SUCCESS method=LogInPageTest.verifyLogInWithValidData()[pri:0, instance:testCase.LogInPageTest@4f2b503c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+      </class> <!-- testCase.LogInPageTest -->
     </test> <!-- ChromeTest -->
-    <test started-at="2024-10-29T09:49:50 EDT" name="FirefoxTest" finished-at="2024-10-29T09:50:08 EDT" duration-ms="18208">
-      <class name="testCase.ManageContactTest">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageContactTest@5af3a0f]" started-at="2024-10-29T09:49:50 EDT" name="beforeMethod" finished-at="2024-10-29T09:49:55 EDT" duration-ms="5570" status="PASS">
+    <test started-at="2024-10-29T10:28:18 EDT" name="FirefoxTest" finished-at="2024-10-29T10:28:39 EDT" duration-ms="20891">
+      <class name="testCase.LogInPageTest">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LogInPageTest@1ffaf86]" started-at="2024-10-29T10:28:20 EDT" name="beforeMethod" finished-at="2024-10-29T10:28:25 EDT" duration-ms="5496" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -82,24 +124,34 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="editContact()[pri:0, instance:testCase.ManageContactTest@5af3a0f]" started-at="2024-10-29T09:49:55 EDT" name="editContact" finished-at="2024-10-29T09:49:58 EDT" duration-ms="2436" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- editContact -->
-        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageContactTest@5af3a0f]" started-at="2024-10-29T09:49:58 EDT" name="afterMethode" finished-at="2024-10-29T09:49:59 EDT" duration-ms="1049" status="PASS">
+        <test-method signature="verifyLogInWithExcelData(java.lang.String,java.lang.String)[pri:0, instance:testCase.LogInPageTest@1ffaf86]" started-at="2024-10-29T10:28:25 EDT" name="verifyLogInWithExcelData" data-provider="excelDataProvider" finished-at="2024-10-29T10:28:26 EDT" duration-ms="444" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=editContact status=SUCCESS method=ManageContactTest.editContact()[pri:0, instance:testCase.ManageContactTest@5af3a0f] output={null}]]]>
+                <![CDATA[admininvalid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogInWithExcelData -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.LogInPageTest@1ffaf86]" started-at="2024-10-29T10:28:26 EDT" name="afterMethode" finished-at="2024-10-29T10:28:26 EDT" duration-ms="833" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLogInWithExcelData status=SUCCESS method=LogInPageTest.verifyLogInWithExcelData(java.lang.String,java.lang.String)[pri:0, instance:testCase.LogInPageTest@1ffaf86] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethode -->
-      </class> <!-- testCase.ManageContactTest -->
-      <class name="testCase.AdminUsersTest">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.AdminUsersTest@19ae6bb]" started-at="2024-10-29T09:49:59 EDT" name="beforeMethod" finished-at="2024-10-29T09:50:04 EDT" duration-ms="4904" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LogInPageTest@1ffaf86]" started-at="2024-10-29T10:28:26 EDT" name="beforeMethod" finished-at="2024-10-29T10:28:32 EDT" duration-ms="5291" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -110,22 +162,60 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyAddAdminUsers()[pri:0, instance:testCase.AdminUsersTest@19ae6bb]" started-at="2024-10-29T09:50:04 EDT" name="verifyAddAdminUsers" finished-at="2024-10-29T09:50:07 EDT" duration-ms="3317" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddAdminUsers -->
-        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.AdminUsersTest@19ae6bb]" started-at="2024-10-29T09:50:07 EDT" name="afterMethode" finished-at="2024-10-29T09:50:08 EDT" duration-ms="742" status="PASS">
+        <test-method signature="verifyLogInWithExcelData(java.lang.String,java.lang.String)[pri:0, instance:testCase.LogInPageTest@1ffaf86]" started-at="2024-10-29T10:28:32 EDT" name="verifyLogInWithExcelData" data-provider="excelDataProvider" finished-at="2024-10-29T10:28:32 EDT" duration-ms="409" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyAddAdminUsers status=SUCCESS method=AdminUsersTest.verifyAddAdminUsers()[pri:0, instance:testCase.AdminUsersTest@19ae6bb] output={null}]]]>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogInWithExcelData -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.LogInPageTest@1ffaf86]" started-at="2024-10-29T10:28:32 EDT" name="afterMethode" finished-at="2024-10-29T10:28:33 EDT" duration-ms="616" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLogInWithExcelData status=SUCCESS method=LogInPageTest.verifyLogInWithExcelData(java.lang.String,java.lang.String)[pri:0, instance:testCase.LogInPageTest@1ffaf86] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethode -->
-      </class> <!-- testCase.AdminUsersTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LogInPageTest@1ffaf86]" started-at="2024-10-29T10:28:33 EDT" name="beforeMethod" finished-at="2024-10-29T10:28:37 EDT" duration-ms="4794" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyLogInWithValidData()[pri:0, instance:testCase.LogInPageTest@1ffaf86]" started-at="2024-10-29T10:28:37 EDT" name="verifyLogInWithValidData" finished-at="2024-10-29T10:28:38 EDT" duration-ms="890" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogInWithValidData -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.LogInPageTest@1ffaf86]" started-at="2024-10-29T10:28:38 EDT" name="afterMethode" finished-at="2024-10-29T10:28:39 EDT" duration-ms="730" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLogInWithValidData status=SUCCESS method=LogInPageTest.verifyLogInWithValidData()[pri:0, instance:testCase.LogInPageTest@1ffaf86] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+      </class> <!-- testCase.LogInPageTest -->
     </test> <!-- FirefoxTest -->
   </suite> <!-- GroceryApplication -->
 </testng-results>

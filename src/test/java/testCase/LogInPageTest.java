@@ -49,10 +49,33 @@ public class LogInPageTest extends BaseClass {
 		Assert.assertEquals(actualAlert, expectedAlert, "Alert is not as expected");
 	}
 
-	@DataProvider(name = "excelDataProvider")
-	public Object[][] excelDataProvider() throws IOException {
+	/*@DataProvider(name = "excelDataProvider")
+	public Object[][] excelDataProvider() throws IOException,InterruptedException {
+		Thread.sleep(500);
 		return new Object[][] { { ExcelUtility.getInvalidStringData(2, 0), ExcelUtility.getInvalidStringData(2, 1) },
-				{ ExcelUtility.getInvalidStringData(3, 0), ExcelUtility.getInvalidStringData(3, 1) } };
+				{ExcelUtility.getInvalidStringData(3, 0), ExcelUtility.getInvalidStringData(3, 1) } };
+	}*/
+	
+	@DataProvider(name = "excelDataProvider")
+	public Object[][] excelDataProvider() throws IOException, InterruptedException {
+	    // Introduce a small wait before accessing the Excel file data
+	    Thread.sleep(100);
+
+	    // Fetch data from the Excel file
+	    String username1 = ExcelUtility.getInvalidStringData(2, 0);
+	    Thread.sleep(100); // wait between accesses
+	    String password1 = ExcelUtility.getInvalidStringData(2, 1);
+	    Thread.sleep(100); // wait between accesses
+
+	    String username2 = ExcelUtility.getInvalidStringData(3, 0);
+	    Thread.sleep(100); // wait between accesses
+	    String password2 = ExcelUtility.getInvalidStringData(3, 1);
+	    Thread.sleep(100); // wait between accesses
+
+	    return new Object[][] { 
+	        { username1, password1 },
+	        { username2, password2 }
+	    };
 	}
 
 }
