@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="4" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-28T23:39:03 EDT" name="GroceryApplication" finished-at="2024-10-28T23:39:16 EDT" duration-ms="12990">
+    <groups>
+    </groups>
+    <test started-at="2024-10-28T23:39:03 EDT" name="ChromeTest" finished-at="2024-10-28T23:39:16 EDT" duration-ms="12990">
+      <class name="testCase.LogInPageTest">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LogInPageTest@4f2b503c]" started-at="2024-10-28T23:39:04 EDT" name="beforeMethod" finished-at="2024-10-28T23:39:07 EDT" duration-ms="3578" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyLogInWithExcelData(java.lang.String,java.lang.String)[pri:0, instance:testCase.LogInPageTest@4f2b503c]" started-at="2024-10-28T23:39:07 EDT" name="verifyLogInWithExcelData" data-provider="excelDataProvider" finished-at="2024-10-28T23:39:08 EDT" duration-ms="638" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admininvalid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogInWithExcelData -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.LogInPageTest@4f2b503c]" started-at="2024-10-28T23:39:08 EDT" name="afterMethode" finished-at="2024-10-28T23:39:08 EDT" duration-ms="164" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLogInWithExcelData status=SUCCESS method=LogInPageTest.verifyLogInWithExcelData(java.lang.String,java.lang.String)[pri:0, instance:testCase.LogInPageTest@4f2b503c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LogInPageTest@4f2b503c]" started-at="2024-10-28T23:39:08 EDT" name="beforeMethod" finished-at="2024-10-28T23:39:11 EDT" duration-ms="3031" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyLogInWithExcelData(java.lang.String,java.lang.String)[pri:0, instance:testCase.LogInPageTest@4f2b503c]" started-at="2024-10-28T23:39:11 EDT" name="verifyLogInWithExcelData" data-provider="excelDataProvider" finished-at="2024-10-28T23:39:12 EDT" duration-ms="517" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogInWithExcelData -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.LogInPageTest@4f2b503c]" started-at="2024-10-28T23:39:12 EDT" name="afterMethode" finished-at="2024-10-28T23:39:12 EDT" duration-ms="144" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLogInWithExcelData status=SUCCESS method=LogInPageTest.verifyLogInWithExcelData(java.lang.String,java.lang.String)[pri:0, instance:testCase.LogInPageTest@4f2b503c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LogInPageTest@4f2b503c]" started-at="2024-10-28T23:39:12 EDT" name="beforeMethod" finished-at="2024-10-28T23:39:15 EDT" duration-ms="2823" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyLogInWithValidData()[pri:0, instance:testCase.LogInPageTest@4f2b503c]" started-at="2024-10-28T23:39:15 EDT" name="verifyLogInWithValidData" finished-at="2024-10-28T23:39:16 EDT" duration-ms="999" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogInWithValidData -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.LogInPageTest@4f2b503c]" started-at="2024-10-28T23:39:16 EDT" name="afterMethode" finished-at="2024-10-28T23:39:16 EDT" duration-ms="165" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLogInWithValidData status=SUCCESS method=LogInPageTest.verifyLogInWithValidData()[pri:0, instance:testCase.LogInPageTest@4f2b503c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+      </class> <!-- testCase.LogInPageTest -->
+    </test> <!-- ChromeTest -->
+  </suite> <!-- GroceryApplication -->
+</testng-results>

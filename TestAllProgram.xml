@@ -1,0 +1,8 @@
+<suite name="GroceryApplication" parallel="tests" thread-count="2">
+	<test name="ChromeTest">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="testCase.LogInPageTest"></class>		
+		</classes>
+	</test>
+</suite>
