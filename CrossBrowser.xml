@@ -9,7 +9,7 @@
 	<test name="FirefoxTest">
 		<parameter name="browser" value="firefox"></parameter>
 		<classes>
-			<class name="testCase.LogInPageTest"></class>
+			<class name="testCase.ManageNewsTest"></class>
 			<class name="testCase.SubCategoryTest"></class>			
 		</classes>
 	</test>

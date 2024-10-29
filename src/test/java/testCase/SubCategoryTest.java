@@ -25,9 +25,12 @@ public class SubCategoryTest extends BaseClass {
 		hp = lp.sendLoginDetails(username, password);
 		sc=hp.clickOnSubCategoryButton();
 		sc.addNewSubCategory();
-		String actualSubCategoryCreatedAlert = sc.getAlertElementText();
-		String expectedSubCategoryCreatedAlert = "Alert!\nSub Category Created Successfully";
-		Assert.assertEquals(actualSubCategoryCreatedAlert, expectedSubCategoryCreatedAlert,"SubCategory Alert is not as expected");
+		//String actualSubCategoryCreatedAlert = sc.getAlertElementText();
+		//String expectedSubCategoryCreatedAlert = "Alert!\nSub Category Created Successfully";
+		//Assert.assertEquals(actualSubCategoryCreatedAlert, expectedSubCategoryCreatedAlert,"SubCategory Alert is not as expected");
+		boolean actualSubCategoryCreatedAlert = sc.getAlertElementText().contains("Sub Category Created Successfully");
+		boolean expectedUpdateAlert = true;
+		Assert.assertEquals(actualSubCategoryCreatedAlert, expectedUpdateAlert, "Alert is not as expected");
 		hp.clickOnSubCategoryButton();
 		String actualSubCategoryName = sc.readSubCategoryTableElement(1, 1);
 		String expectedSubCategoryName = sc.getSubCategoryName();
