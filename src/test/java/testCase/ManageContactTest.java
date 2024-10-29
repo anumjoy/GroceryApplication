@@ -16,7 +16,7 @@ public class ManageContactTest extends BaseClass {
 	HomePage hp;
 	ManageContact mc;
 
-	@Test
+	@Test(groups="smoke")
 	// Edit Contact
 	public void editContact() throws IOException {
 		lp = new LogInPage(driver);

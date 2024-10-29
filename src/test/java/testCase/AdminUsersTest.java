@@ -17,7 +17,7 @@ public class AdminUsersTest extends BaseClass {
 	HomePage hp;
 	AdminUsers au;
 
-	@Test
+	@Test(groups="smoke")
 	// Add
 	public void verifyAddAdminUsers() throws IOException {
 		lp = new LogInPage(driver);

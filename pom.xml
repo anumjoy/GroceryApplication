@@ -23,7 +23,7 @@
 
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>TestnewTestcase.xml</suiteXmlFile>
+						<suiteXmlFile>CrossBrowser.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
