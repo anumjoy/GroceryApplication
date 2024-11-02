@@ -1,6 +1,8 @@
 package elementRepository;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.ElementClickInterceptedException;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -51,7 +53,15 @@ public class CategoryPage {
 		this.editCategoryName=editCategoryName;
 		gu.scrollToElement(driver, categoryUpdateButton);
 		wu.waitForElementToBeClickable(driver, categoryUpdateButton);
-		categoryUpdateButton.click();		
+		//categoryUpdateButton.click();
+		try {
+	        // Try to click the button normally
+	        categoryUpdateButton.click();
+	    } catch (ElementClickInterceptedException e) {
+	        // If click is intercepted, use JavaScript click as a fallback
+	        JavascriptExecutor js = (JavascriptExecutor) driver;
+	        js.executeScript("arguments[0].click();", categoryUpdateButton);
+	    }
 	}
 	
 	public String getUpdateAlertMsg() {		

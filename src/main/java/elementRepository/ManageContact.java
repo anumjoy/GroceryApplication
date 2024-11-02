@@ -1,6 +1,8 @@
 package elementRepository;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.ElementClickInterceptedException;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -37,7 +39,15 @@ public class ManageContact {
 		addressField.sendKeys(editContactAddress);
 		gu.scrollToElement(driver, updateButtonElement);
 		wu.waitForElementToBeClickable(driver, updateButtonElement);
-		updateButtonElement.click();		
+		//updateButtonElement.click();	
+		try {
+	        // Try to click the button normally
+			updateButtonElement.click();
+	    } catch (ElementClickInterceptedException e) {
+	        // If click is intercepted, use JavaScript click as a fallback
+	        JavascriptExecutor js = (JavascriptExecutor) driver;
+	        js.executeScript("arguments[0].click();", updateButtonElement);
+	    }
 	}	
 	public String getUpdateAlert() {
 		return updateAlertElement.getText();
