@@ -50,6 +50,7 @@ public class CategoryPage {
 		editCategoryElement.sendKeys(editCategoryName);
 		this.editCategoryName=editCategoryName;
 		gu.scrollToElement(driver, categoryUpdateButton);
+		wu.waitForElementToBeClickable(driver, categoryUpdateButton);
 		categoryUpdateButton.click();		
 	}
 	

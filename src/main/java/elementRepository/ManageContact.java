@@ -36,6 +36,7 @@ public class ManageContact {
 		addressField.clear();
 		addressField.sendKeys(editContactAddress);
 		gu.scrollToElement(driver, updateButtonElement);
+		wu.waitForElementToBeClickable(driver, updateButtonElement);
 		updateButtonElement.click();		
 	}	
 	public String getUpdateAlert() {
