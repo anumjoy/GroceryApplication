@@ -2,7 +2,7 @@
 <testng-results ignored="2" total="30" passed="28" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-02T13:32:43 EDT" name="GroceryApplication" finished-at="2024-11-02T13:34:48 EDT" duration-ms="125108">
+  <suite started-at="2024-11-02T13:58:23 EDT" name="GroceryApplication" finished-at="2024-11-02T14:00:39 EDT" duration-ms="135536">
     <groups>
       <group name="smoke">
         <method signature="AdminUsersTest.verifyAddAdminUsers()[pri:0, instance:testCase.AdminUsersTest@62f4ff3b]" name="verifyAddAdminUsers" class="testCase.AdminUsersTest"/>
@@ -11,9 +11,9 @@
         <method signature="ManageContactTest.editContact()[pri:0, instance:testCase.ManageContactTest@3b77a04f]" name="editContact" class="testCase.ManageContactTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2024-11-02T13:32:43 EDT" name="ChromeTest" finished-at="2024-11-02T13:34:16 EDT" duration-ms="92581">
+    <test started-at="2024-11-02T13:58:23 EDT" name="ChromeTest" finished-at="2024-11-02T13:59:55 EDT" duration-ms="91858">
       <class name="testCase.ManageContactTest">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageContactTest@4504d271]" started-at="2024-11-02T13:33:49 EDT" name="beforeMethod" finished-at="2024-11-02T13:33:53 EDT" duration-ms="3329" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageContactTest@4504d271]" started-at="2024-11-02T13:59:30 EDT" name="beforeMethod" finished-at="2024-11-02T13:59:33 EDT" duration-ms="3083" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -24,11 +24,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="editContact()[pri:0, instance:testCase.ManageContactTest@4504d271]" started-at="2024-11-02T13:33:53 EDT" name="editContact" finished-at="2024-11-02T13:33:55 EDT" duration-ms="2630" status="PASS">
+        <test-method signature="editContact()[pri:0, instance:testCase.ManageContactTest@4504d271]" started-at="2024-11-02T13:59:33 EDT" name="editContact" finished-at="2024-11-02T13:59:36 EDT" duration-ms="2703" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editContact -->
-        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageContactTest@4504d271]" started-at="2024-11-02T13:33:55 EDT" name="afterMethode" finished-at="2024-11-02T13:33:55 EDT" duration-ms="220" status="PASS">
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageContactTest@4504d271]" started-at="2024-11-02T13:59:36 EDT" name="afterMethode" finished-at="2024-11-02T13:59:36 EDT" duration-ms="226" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,7 +41,7 @@
         </test-method> <!-- afterMethode -->
       </class> <!-- testCase.ManageContactTest -->
       <class name="testCase.AdminUsersTest">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.AdminUsersTest@62f4ff3b]" started-at="2024-11-02T13:33:18 EDT" name="beforeMethod" finished-at="2024-11-02T13:33:20 EDT" duration-ms="2785" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.AdminUsersTest@62f4ff3b]" started-at="2024-11-02T13:59:03 EDT" name="beforeMethod" finished-at="2024-11-02T13:59:06 EDT" duration-ms="3441" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -52,11 +52,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyAddAdminUsers()[pri:0, instance:testCase.AdminUsersTest@62f4ff3b]" started-at="2024-11-02T13:33:20 EDT" name="verifyAddAdminUsers" finished-at="2024-11-02T13:33:23 EDT" duration-ms="2797" status="PASS">
+        <test-method signature="verifyAddAdminUsers()[pri:0, instance:testCase.AdminUsersTest@62f4ff3b]" started-at="2024-11-02T13:59:06 EDT" name="verifyAddAdminUsers" finished-at="2024-11-02T13:59:10 EDT" duration-ms="3588" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddAdminUsers -->
-        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.AdminUsersTest@62f4ff3b]" started-at="2024-11-02T13:33:23 EDT" name="afterMethode" finished-at="2024-11-02T13:33:23 EDT" duration-ms="263" status="PASS">
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.AdminUsersTest@62f4ff3b]" started-at="2024-11-02T13:59:10 EDT" name="afterMethode" finished-at="2024-11-02T13:59:10 EDT" duration-ms="205" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -67,7 +67,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethode -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.AdminUsersTest@62f4ff3b]" started-at="2024-11-02T13:33:23 EDT" name="beforeMethod" finished-at="2024-11-02T13:33:33 EDT" duration-ms="9658" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.AdminUsersTest@62f4ff3b]" started-at="2024-11-02T13:59:10 EDT" name="beforeMethod" finished-at="2024-11-02T13:59:13 EDT" duration-ms="3186" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -78,11 +78,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyUserStatus()[pri:0, instance:testCase.AdminUsersTest@62f4ff3b]" started-at="2024-11-02T13:33:33 EDT" name="verifyUserStatus" finished-at="2024-11-02T13:33:35 EDT" duration-ms="2467" status="PASS">
+        <test-method signature="verifyUserStatus()[pri:0, instance:testCase.AdminUsersTest@62f4ff3b]" started-at="2024-11-02T13:59:13 EDT" name="verifyUserStatus" finished-at="2024-11-02T13:59:16 EDT" duration-ms="3258" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserStatus -->
-        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.AdminUsersTest@62f4ff3b]" started-at="2024-11-02T13:33:35 EDT" name="afterMethode" finished-at="2024-11-02T13:33:36 EDT" duration-ms="461" status="PASS">
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.AdminUsersTest@62f4ff3b]" started-at="2024-11-02T13:59:16 EDT" name="afterMethode" finished-at="2024-11-02T13:59:17 EDT" duration-ms="253" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -94,62 +94,8 @@
           </reporter-output>
         </test-method> <!-- afterMethode -->
       </class> <!-- testCase.AdminUsersTest -->
-      <class name="testCase.CategoryPageTest">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.CategoryPageTest@1698fc68]" started-at="2024-11-02T13:33:36 EDT" name="beforeMethod" finished-at="2024-11-02T13:33:39 EDT" duration-ms="3186" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyDeleteCategory()[pri:0, instance:testCase.CategoryPageTest@1698fc68]" started-at="2024-11-02T13:33:39 EDT" name="verifyDeleteCategory" finished-at="2024-11-02T13:33:42 EDT" duration-ms="2719" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyDeleteCategory -->
-        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.CategoryPageTest@1698fc68]" started-at="2024-11-02T13:33:42 EDT" name="afterMethode" finished-at="2024-11-02T13:33:42 EDT" duration-ms="272" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyDeleteCategory status=SUCCESS method=CategoryPageTest.verifyDeleteCategory()[pri:0, instance:testCase.CategoryPageTest@1698fc68] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethode -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.CategoryPageTest@1698fc68]" started-at="2024-11-02T13:33:42 EDT" name="beforeMethod" finished-at="2024-11-02T13:33:45 EDT" duration-ms="3360" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyEditCategory()[pri:0, instance:testCase.CategoryPageTest@1698fc68]" started-at="2024-11-02T13:33:45 EDT" name="verifyEditCategory" finished-at="2024-11-02T13:33:49 EDT" duration-ms="3583" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyEditCategory -->
-        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.CategoryPageTest@1698fc68]" started-at="2024-11-02T13:33:49 EDT" name="afterMethode" finished-at="2024-11-02T13:33:49 EDT" duration-ms="182" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyEditCategory status=SUCCESS method=CategoryPageTest.verifyEditCategory()[pri:0, instance:testCase.CategoryPageTest@1698fc68] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethode -->
-      </class> <!-- testCase.CategoryPageTest -->
       <class name="testCase.SubCategoryTest">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.SubCategoryTest@56a4479a]" started-at="2024-11-02T13:32:57 EDT" name="beforeMethod" finished-at="2024-11-02T13:33:00 EDT" duration-ms="2893" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.SubCategoryTest@56a4479a]" started-at="2024-11-02T13:58:41 EDT" name="beforeMethod" finished-at="2024-11-02T13:58:44 EDT" duration-ms="3315" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -160,11 +106,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="deleteSubCategory()[pri:0, instance:testCase.SubCategoryTest@56a4479a]" started-at="2024-11-02T13:33:00 EDT" name="deleteSubCategory" finished-at="2024-11-02T13:33:03 EDT" duration-ms="3282" status="PASS">
+        <test-method signature="deleteSubCategory()[pri:0, instance:testCase.SubCategoryTest@56a4479a]" started-at="2024-11-02T13:58:44 EDT" name="deleteSubCategory" finished-at="2024-11-02T13:58:48 EDT" duration-ms="4004" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteSubCategory -->
-        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.SubCategoryTest@56a4479a]" started-at="2024-11-02T13:33:03 EDT" name="afterMethode" finished-at="2024-11-02T13:33:03 EDT" duration-ms="185" status="PASS">
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.SubCategoryTest@56a4479a]" started-at="2024-11-02T13:58:48 EDT" name="afterMethode" finished-at="2024-11-02T13:58:48 EDT" duration-ms="259" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -175,7 +121,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethode -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.SubCategoryTest@56a4479a]" started-at="2024-11-02T13:33:03 EDT" name="beforeMethod" finished-at="2024-11-02T13:33:08 EDT" duration-ms="4578" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.SubCategoryTest@56a4479a]" started-at="2024-11-02T13:58:48 EDT" name="beforeMethod" finished-at="2024-11-02T13:58:51 EDT" duration-ms="3139" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -186,11 +132,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="updateSubCategory()[pri:0, instance:testCase.SubCategoryTest@56a4479a]" started-at="2024-11-02T13:33:08 EDT" name="updateSubCategory" finished-at="2024-11-02T13:33:11 EDT" duration-ms="3075" status="PASS">
+        <test-method signature="updateSubCategory()[pri:0, instance:testCase.SubCategoryTest@56a4479a]" started-at="2024-11-02T13:58:51 EDT" name="updateSubCategory" finished-at="2024-11-02T13:58:55 EDT" duration-ms="3383" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateSubCategory -->
-        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.SubCategoryTest@56a4479a]" started-at="2024-11-02T13:33:11 EDT" name="afterMethode" finished-at="2024-11-02T13:33:11 EDT" duration-ms="176" status="PASS">
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.SubCategoryTest@56a4479a]" started-at="2024-11-02T13:58:55 EDT" name="afterMethode" finished-at="2024-11-02T13:58:55 EDT" duration-ms="314" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -201,7 +147,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethode -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.SubCategoryTest@56a4479a]" started-at="2024-11-02T13:33:11 EDT" name="beforeMethod" finished-at="2024-11-02T13:33:14 EDT" duration-ms="2963" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.SubCategoryTest@56a4479a]" started-at="2024-11-02T13:58:55 EDT" name="beforeMethod" finished-at="2024-11-02T13:58:59 EDT" duration-ms="3423" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -212,11 +158,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyNewSubCategory()[pri:0, instance:testCase.SubCategoryTest@56a4479a]" started-at="2024-11-02T13:33:14 EDT" name="verifyNewSubCategory" finished-at="2024-11-02T13:33:17 EDT" duration-ms="3377" status="PASS">
+        <test-method signature="verifyNewSubCategory()[pri:0, instance:testCase.SubCategoryTest@56a4479a]" started-at="2024-11-02T13:58:59 EDT" name="verifyNewSubCategory" finished-at="2024-11-02T13:59:03 EDT" duration-ms="3919" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNewSubCategory -->
-        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.SubCategoryTest@56a4479a]" started-at="2024-11-02T13:33:17 EDT" name="afterMethode" finished-at="2024-11-02T13:33:18 EDT" duration-ms="239" status="PASS">
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.SubCategoryTest@56a4479a]" started-at="2024-11-02T13:59:03 EDT" name="afterMethode" finished-at="2024-11-02T13:59:03 EDT" duration-ms="287" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -228,8 +174,8 @@
           </reporter-output>
         </test-method> <!-- afterMethode -->
       </class> <!-- testCase.SubCategoryTest -->
-      <class name="testCase.ManageNewsTest">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageNewsTest@207b8649]" started-at="2024-11-02T13:33:55 EDT" name="beforeMethod" finished-at="2024-11-02T13:33:58 EDT" duration-ms="2990" status="PASS">
+      <class name="testCase.CategoryPageTest">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.CategoryPageTest@1698fc68]" started-at="2024-11-02T13:59:17 EDT" name="beforeMethod" finished-at="2024-11-02T13:59:20 EDT" duration-ms="3364" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -240,11 +186,65 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyAddedNews()[pri:0, instance:testCase.ManageNewsTest@207b8649]" started-at="2024-11-02T13:33:58 EDT" name="verifyAddedNews" finished-at="2024-11-02T13:34:01 EDT" duration-ms="3044" status="PASS">
+        <test-method signature="verifyDeleteCategory()[pri:0, instance:testCase.CategoryPageTest@1698fc68]" started-at="2024-11-02T13:59:20 EDT" name="verifyDeleteCategory" finished-at="2024-11-02T13:59:23 EDT" duration-ms="2666" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteCategory -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.CategoryPageTest@1698fc68]" started-at="2024-11-02T13:59:23 EDT" name="afterMethode" finished-at="2024-11-02T13:59:23 EDT" duration-ms="226" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyDeleteCategory status=SUCCESS method=CategoryPageTest.verifyDeleteCategory()[pri:0, instance:testCase.CategoryPageTest@1698fc68] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.CategoryPageTest@1698fc68]" started-at="2024-11-02T13:59:23 EDT" name="beforeMethod" finished-at="2024-11-02T13:59:26 EDT" duration-ms="3028" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyEditCategory()[pri:0, instance:testCase.CategoryPageTest@1698fc68]" started-at="2024-11-02T13:59:26 EDT" name="verifyEditCategory" finished-at="2024-11-02T13:59:30 EDT" duration-ms="3579" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEditCategory -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.CategoryPageTest@1698fc68]" started-at="2024-11-02T13:59:30 EDT" name="afterMethode" finished-at="2024-11-02T13:59:30 EDT" duration-ms="245" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyEditCategory status=SUCCESS method=CategoryPageTest.verifyEditCategory()[pri:0, instance:testCase.CategoryPageTest@1698fc68] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+      </class> <!-- testCase.CategoryPageTest -->
+      <class name="testCase.ManageNewsTest">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageNewsTest@207b8649]" started-at="2024-11-02T13:59:36 EDT" name="beforeMethod" finished-at="2024-11-02T13:59:39 EDT" duration-ms="3595" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyAddedNews()[pri:0, instance:testCase.ManageNewsTest@207b8649]" started-at="2024-11-02T13:59:39 EDT" name="verifyAddedNews" finished-at="2024-11-02T13:59:43 EDT" duration-ms="3096" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddedNews -->
-        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageNewsTest@207b8649]" started-at="2024-11-02T13:34:01 EDT" name="afterMethode" finished-at="2024-11-02T13:34:02 EDT" duration-ms="195" status="PASS">
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageNewsTest@207b8649]" started-at="2024-11-02T13:59:43 EDT" name="afterMethode" finished-at="2024-11-02T13:59:43 EDT" duration-ms="221" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -255,7 +255,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethode -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageNewsTest@207b8649]" started-at="2024-11-02T13:34:02 EDT" name="beforeMethod" finished-at="2024-11-02T13:34:05 EDT" duration-ms="3088" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageNewsTest@207b8649]" started-at="2024-11-02T13:59:43 EDT" name="beforeMethod" finished-at="2024-11-02T13:59:46 EDT" duration-ms="3098" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -266,11 +266,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyDeleteNews()[pri:0, instance:testCase.ManageNewsTest@207b8649]" started-at="2024-11-02T13:34:05 EDT" name="verifyDeleteNews" finished-at="2024-11-02T13:34:07 EDT" duration-ms="2478" status="PASS">
+        <test-method signature="verifyDeleteNews()[pri:0, instance:testCase.ManageNewsTest@207b8649]" started-at="2024-11-02T13:59:46 EDT" name="verifyDeleteNews" finished-at="2024-11-02T13:59:48 EDT" duration-ms="2457" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDeleteNews -->
-        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageNewsTest@207b8649]" started-at="2024-11-02T13:34:07 EDT" name="afterMethode" finished-at="2024-11-02T13:34:07 EDT" duration-ms="203" status="PASS">
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageNewsTest@207b8649]" started-at="2024-11-02T13:59:48 EDT" name="afterMethode" finished-at="2024-11-02T13:59:49 EDT" duration-ms="251" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -281,7 +281,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethode -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageNewsTest@207b8649]" started-at="2024-11-02T13:34:07 EDT" name="beforeMethod" finished-at="2024-11-02T13:34:12 EDT" duration-ms="4291" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageNewsTest@207b8649]" started-at="2024-11-02T13:59:49 EDT" name="beforeMethod" finished-at="2024-11-02T13:59:52 EDT" duration-ms="3229" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -292,11 +292,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyEditNews()[pri:0, instance:testCase.ManageNewsTest@207b8649]" started-at="2024-11-02T13:34:12 EDT" name="verifyEditNews" finished-at="2024-11-02T13:34:16 EDT" duration-ms="3848" status="PASS">
+        <test-method signature="verifyEditNews()[pri:0, instance:testCase.ManageNewsTest@207b8649]" started-at="2024-11-02T13:59:52 EDT" name="verifyEditNews" finished-at="2024-11-02T13:59:55 EDT" duration-ms="2887" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEditNews -->
-        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageNewsTest@207b8649]" started-at="2024-11-02T13:34:16 EDT" name="afterMethode" finished-at="2024-11-02T13:34:16 EDT" duration-ms="177" status="PASS">
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageNewsTest@207b8649]" started-at="2024-11-02T13:59:55 EDT" name="afterMethode" finished-at="2024-11-02T13:59:55 EDT" duration-ms="206" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -309,7 +309,7 @@
         </test-method> <!-- afterMethode -->
       </class> <!-- testCase.ManageNewsTest -->
       <class name="testCase.LogInPageTest">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LogInPageTest@58fe0499]" started-at="2024-11-02T13:32:44 EDT" name="beforeMethod" finished-at="2024-11-02T13:32:48 EDT" duration-ms="3217" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LogInPageTest@58fe0499]" started-at="2024-11-02T13:58:24 EDT" name="beforeMethod" finished-at="2024-11-02T13:58:31 EDT" duration-ms="6570" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -320,7 +320,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyLogInWithExcelData(java.lang.String,java.lang.String)[pri:0, instance:testCase.LogInPageTest@58fe0499]" started-at="2024-11-02T13:32:48 EDT" name="verifyLogInWithExcelData" data-provider="excelDataProvider" finished-at="2024-11-02T13:32:48 EDT" duration-ms="779" status="PASS">
+        <test-method signature="verifyLogInWithExcelData(java.lang.String,java.lang.String)[pri:0, instance:testCase.LogInPageTest@58fe0499]" started-at="2024-11-02T13:58:31 EDT" name="verifyLogInWithExcelData" data-provider="excelDataProvider" finished-at="2024-11-02T13:58:31 EDT" duration-ms="552" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -336,7 +336,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogInWithExcelData -->
-        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.LogInPageTest@58fe0499]" started-at="2024-11-02T13:32:48 EDT" name="afterMethode" finished-at="2024-11-02T13:32:49 EDT" duration-ms="169" status="PASS">
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.LogInPageTest@58fe0499]" started-at="2024-11-02T13:58:31 EDT" name="afterMethode" finished-at="2024-11-02T13:58:32 EDT" duration-ms="206" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -347,7 +347,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethode -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LogInPageTest@58fe0499]" started-at="2024-11-02T13:32:49 EDT" name="beforeMethod" finished-at="2024-11-02T13:32:51 EDT" duration-ms="2885" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LogInPageTest@58fe0499]" started-at="2024-11-02T13:58:32 EDT" name="beforeMethod" finished-at="2024-11-02T13:58:35 EDT" duration-ms="3056" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -358,7 +358,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyLogInWithExcelData(java.lang.String,java.lang.String)[pri:0, instance:testCase.LogInPageTest@58fe0499]" started-at="2024-11-02T13:32:51 EDT" name="verifyLogInWithExcelData" data-provider="excelDataProvider" finished-at="2024-11-02T13:32:52 EDT" duration-ms="527" status="PASS">
+        <test-method signature="verifyLogInWithExcelData(java.lang.String,java.lang.String)[pri:0, instance:testCase.LogInPageTest@58fe0499]" started-at="2024-11-02T13:58:35 EDT" name="verifyLogInWithExcelData" data-provider="excelDataProvider" finished-at="2024-11-02T13:58:36 EDT" duration-ms="855" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -374,7 +374,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogInWithExcelData -->
-        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.LogInPageTest@58fe0499]" started-at="2024-11-02T13:32:52 EDT" name="afterMethode" finished-at="2024-11-02T13:32:52 EDT" duration-ms="245" status="PASS">
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.LogInPageTest@58fe0499]" started-at="2024-11-02T13:58:36 EDT" name="afterMethode" finished-at="2024-11-02T13:58:36 EDT" duration-ms="357" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -385,7 +385,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethode -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LogInPageTest@58fe0499]" started-at="2024-11-02T13:32:52 EDT" name="beforeMethod" finished-at="2024-11-02T13:32:56 EDT" duration-ms="3329" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LogInPageTest@58fe0499]" started-at="2024-11-02T13:58:36 EDT" name="beforeMethod" finished-at="2024-11-02T13:58:39 EDT" duration-ms="3451" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -396,11 +396,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyLogInWithValidData()[pri:0, instance:testCase.LogInPageTest@58fe0499]" started-at="2024-11-02T13:32:56 EDT" name="verifyLogInWithValidData" finished-at="2024-11-02T13:32:57 EDT" duration-ms="1054" status="PASS">
+        <test-method signature="verifyLogInWithValidData()[pri:0, instance:testCase.LogInPageTest@58fe0499]" started-at="2024-11-02T13:58:39 EDT" name="verifyLogInWithValidData" finished-at="2024-11-02T13:58:41 EDT" duration-ms="1183" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogInWithValidData -->
-        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.LogInPageTest@58fe0499]" started-at="2024-11-02T13:32:57 EDT" name="afterMethode" finished-at="2024-11-02T13:32:57 EDT" duration-ms="141" status="PASS">
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.LogInPageTest@58fe0499]" started-at="2024-11-02T13:58:41 EDT" name="afterMethode" finished-at="2024-11-02T13:58:41 EDT" duration-ms="233" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -413,9 +413,9 @@
         </test-method> <!-- afterMethode -->
       </class> <!-- testCase.LogInPageTest -->
     </test> <!-- ChromeTest -->
-    <test started-at="2024-11-02T13:32:43 EDT" name="FirefoxTest" finished-at="2024-11-02T13:34:48 EDT" duration-ms="125108">
+    <test started-at="2024-11-02T13:58:23 EDT" name="FirefoxTest" finished-at="2024-11-02T14:00:39 EDT" duration-ms="135536">
       <class name="testCase.ManageContactTest">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageContactTest@3b77a04f]" started-at="2024-11-02T13:34:18 EDT" name="beforeMethod" finished-at="2024-11-02T13:34:23 EDT" duration-ms="4856" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageContactTest@3b77a04f]" started-at="2024-11-02T14:00:05 EDT" name="beforeMethod" finished-at="2024-11-02T14:00:10 EDT" duration-ms="5408" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -426,11 +426,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="editContact()[pri:0, instance:testCase.ManageContactTest@3b77a04f]" started-at="2024-11-02T13:34:23 EDT" name="editContact" finished-at="2024-11-02T13:34:25 EDT" duration-ms="2249" status="PASS">
+        <test-method signature="editContact()[pri:0, instance:testCase.ManageContactTest@3b77a04f]" started-at="2024-11-02T14:00:10 EDT" name="editContact" finished-at="2024-11-02T14:00:13 EDT" duration-ms="2346" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editContact -->
-        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageContactTest@3b77a04f]" started-at="2024-11-02T13:34:25 EDT" name="afterMethode" finished-at="2024-11-02T13:34:25 EDT" duration-ms="637" status="PASS">
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageContactTest@3b77a04f]" started-at="2024-11-02T14:00:13 EDT" name="afterMethode" finished-at="2024-11-02T14:00:14 EDT" duration-ms="851" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -443,7 +443,7 @@
         </test-method> <!-- afterMethode -->
       </class> <!-- testCase.ManageContactTest -->
       <class name="testCase.AdminUsersTest">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.AdminUsersTest@a8e6492]" started-at="2024-11-02T13:33:36 EDT" name="beforeMethod" finished-at="2024-11-02T13:33:42 EDT" duration-ms="6378" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.AdminUsersTest@a8e6492]" started-at="2024-11-02T13:59:23 EDT" name="beforeMethod" finished-at="2024-11-02T13:59:30 EDT" duration-ms="6825" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -454,11 +454,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyAddAdminUsers()[pri:0, instance:testCase.AdminUsersTest@a8e6492]" started-at="2024-11-02T13:33:42 EDT" name="verifyAddAdminUsers" finished-at="2024-11-02T13:33:46 EDT" duration-ms="3784" status="PASS">
+        <test-method signature="verifyAddAdminUsers()[pri:0, instance:testCase.AdminUsersTest@a8e6492]" started-at="2024-11-02T13:59:30 EDT" name="verifyAddAdminUsers" finished-at="2024-11-02T13:59:34 EDT" duration-ms="3800" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddAdminUsers -->
-        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.AdminUsersTest@a8e6492]" started-at="2024-11-02T13:33:46 EDT" name="afterMethode" finished-at="2024-11-02T13:33:47 EDT" duration-ms="988" status="PASS">
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.AdminUsersTest@a8e6492]" started-at="2024-11-02T13:59:34 EDT" name="afterMethode" finished-at="2024-11-02T13:59:35 EDT" duration-ms="1125" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -469,7 +469,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethode -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.AdminUsersTest@a8e6492]" started-at="2024-11-02T13:33:47 EDT" name="beforeMethod" finished-at="2024-11-02T13:33:53 EDT" duration-ms="5914" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.AdminUsersTest@a8e6492]" started-at="2024-11-02T13:59:35 EDT" name="beforeMethod" finished-at="2024-11-02T13:59:41 EDT" duration-ms="6332" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -480,11 +480,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyUserStatus()[pri:0, instance:testCase.AdminUsersTest@a8e6492]" started-at="2024-11-02T13:33:53 EDT" name="verifyUserStatus" finished-at="2024-11-02T13:33:55 EDT" duration-ms="2321" status="PASS">
+        <test-method signature="verifyUserStatus()[pri:0, instance:testCase.AdminUsersTest@a8e6492]" started-at="2024-11-02T13:59:41 EDT" name="verifyUserStatus" finished-at="2024-11-02T13:59:44 EDT" duration-ms="2871" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserStatus -->
-        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.AdminUsersTest@a8e6492]" started-at="2024-11-02T13:33:55 EDT" name="afterMethode" finished-at="2024-11-02T13:33:57 EDT" duration-ms="1402" status="PASS">
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.AdminUsersTest@a8e6492]" started-at="2024-11-02T13:59:44 EDT" name="afterMethode" finished-at="2024-11-02T13:59:45 EDT" duration-ms="1347" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -496,88 +496,8 @@
           </reporter-output>
         </test-method> <!-- afterMethode -->
       </class> <!-- testCase.AdminUsersTest -->
-      <class name="testCase.SubCategoryTest">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.SubCategoryTest@3fffff43]" started-at="2024-11-02T13:33:06 EDT" name="beforeMethod" finished-at="2024-11-02T13:33:11 EDT" duration-ms="4885" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="deleteSubCategory()[pri:0, instance:testCase.SubCategoryTest@3fffff43]" started-at="2024-11-02T13:33:11 EDT" name="deleteSubCategory" finished-at="2024-11-02T13:33:14 EDT" duration-ms="3040" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteSubCategory -->
-        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.SubCategoryTest@3fffff43]" started-at="2024-11-02T13:33:14 EDT" name="afterMethode" finished-at="2024-11-02T13:33:15 EDT" duration-ms="813" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=deleteSubCategory status=SUCCESS method=SubCategoryTest.deleteSubCategory()[pri:0, instance:testCase.SubCategoryTest@3fffff43] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethode -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.SubCategoryTest@3fffff43]" started-at="2024-11-02T13:33:15 EDT" name="beforeMethod" finished-at="2024-11-02T13:33:20 EDT" duration-ms="5190" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="updateSubCategory()[pri:0, instance:testCase.SubCategoryTest@3fffff43]" started-at="2024-11-02T13:33:20 EDT" name="updateSubCategory" finished-at="2024-11-02T13:33:23 EDT" duration-ms="2555" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateSubCategory -->
-        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.SubCategoryTest@3fffff43]" started-at="2024-11-02T13:33:23 EDT" name="afterMethode" finished-at="2024-11-02T13:33:24 EDT" duration-ms="881" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=updateSubCategory status=SUCCESS method=SubCategoryTest.updateSubCategory()[pri:0, instance:testCase.SubCategoryTest@3fffff43] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethode -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.SubCategoryTest@3fffff43]" started-at="2024-11-02T13:33:24 EDT" name="beforeMethod" finished-at="2024-11-02T13:33:29 EDT" duration-ms="5555" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyNewSubCategory()[pri:0, instance:testCase.SubCategoryTest@3fffff43]" started-at="2024-11-02T13:33:29 EDT" name="verifyNewSubCategory" finished-at="2024-11-02T13:33:32 EDT" duration-ms="3269" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNewSubCategory -->
-        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.SubCategoryTest@3fffff43]" started-at="2024-11-02T13:33:32 EDT" name="afterMethode" finished-at="2024-11-02T13:33:36 EDT" duration-ms="3342" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyNewSubCategory status=SUCCESS method=SubCategoryTest.verifyNewSubCategory()[pri:0, instance:testCase.SubCategoryTest@3fffff43] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethode -->
-      </class> <!-- testCase.SubCategoryTest -->
       <class name="testCase.CategoryPageTest">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.CategoryPageTest@1c7fd41f]" started-at="2024-11-02T13:33:57 EDT" name="beforeMethod" finished-at="2024-11-02T13:34:02 EDT" duration-ms="5402" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.CategoryPageTest@1c7fd41f]" started-at="2024-11-02T13:59:45 EDT" name="beforeMethod" finished-at="2024-11-02T13:59:52 EDT" duration-ms="6341" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -588,11 +508,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyDeleteCategory()[pri:0, instance:testCase.CategoryPageTest@1c7fd41f]" started-at="2024-11-02T13:34:02 EDT" name="verifyDeleteCategory" finished-at="2024-11-02T13:34:04 EDT" duration-ms="2207" status="PASS">
+        <test-method signature="verifyDeleteCategory()[pri:0, instance:testCase.CategoryPageTest@1c7fd41f]" started-at="2024-11-02T13:59:52 EDT" name="verifyDeleteCategory" finished-at="2024-11-02T13:59:54 EDT" duration-ms="2568" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDeleteCategory -->
-        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.CategoryPageTest@1c7fd41f]" started-at="2024-11-02T13:34:04 EDT" name="afterMethode" finished-at="2024-11-02T13:34:05 EDT" duration-ms="950" status="PASS">
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.CategoryPageTest@1c7fd41f]" started-at="2024-11-02T13:59:54 EDT" name="afterMethode" finished-at="2024-11-02T13:59:56 EDT" duration-ms="1327" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -603,7 +523,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethode -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.CategoryPageTest@1c7fd41f]" started-at="2024-11-02T13:34:05 EDT" name="beforeMethod" finished-at="2024-11-02T13:34:13 EDT" duration-ms="7652" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.CategoryPageTest@1c7fd41f]" started-at="2024-11-02T13:59:56 EDT" name="beforeMethod" finished-at="2024-11-02T14:00:01 EDT" duration-ms="5460" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -614,11 +534,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyEditCategory()[pri:0, instance:testCase.CategoryPageTest@1c7fd41f]" started-at="2024-11-02T13:34:13 EDT" name="verifyEditCategory" finished-at="2024-11-02T13:34:17 EDT" duration-ms="3928" status="PASS">
+        <test-method signature="verifyEditCategory()[pri:0, instance:testCase.CategoryPageTest@1c7fd41f]" started-at="2024-11-02T14:00:01 EDT" name="verifyEditCategory" finished-at="2024-11-02T14:00:04 EDT" duration-ms="3027" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEditCategory -->
-        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.CategoryPageTest@1c7fd41f]" started-at="2024-11-02T13:34:17 EDT" name="afterMethode" finished-at="2024-11-02T13:34:18 EDT" duration-ms="905" status="PASS">
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.CategoryPageTest@1c7fd41f]" started-at="2024-11-02T14:00:04 EDT" name="afterMethode" finished-at="2024-11-02T14:00:05 EDT" duration-ms="888" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -630,8 +550,8 @@
           </reporter-output>
         </test-method> <!-- afterMethode -->
       </class> <!-- testCase.CategoryPageTest -->
-      <class name="testCase.ManageNewsTest">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageNewsTest@7b324585]" started-at="2024-11-02T13:34:25 EDT" name="beforeMethod" finished-at="2024-11-02T13:34:30 EDT" duration-ms="4625" status="PASS">
+      <class name="testCase.SubCategoryTest">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.SubCategoryTest@3fffff43]" started-at="2024-11-02T13:58:50 EDT" name="beforeMethod" finished-at="2024-11-02T13:58:56 EDT" duration-ms="6419" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -642,11 +562,91 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyAddedNews()[pri:0, instance:testCase.ManageNewsTest@7b324585]" started-at="2024-11-02T13:34:30 EDT" name="verifyAddedNews" finished-at="2024-11-02T13:34:32 EDT" duration-ms="2318" status="PASS">
+        <test-method signature="deleteSubCategory()[pri:0, instance:testCase.SubCategoryTest@3fffff43]" started-at="2024-11-02T13:58:56 EDT" name="deleteSubCategory" finished-at="2024-11-02T13:59:00 EDT" duration-ms="3928" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteSubCategory -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.SubCategoryTest@3fffff43]" started-at="2024-11-02T13:59:00 EDT" name="afterMethode" finished-at="2024-11-02T13:59:01 EDT" duration-ms="1056" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=deleteSubCategory status=SUCCESS method=SubCategoryTest.deleteSubCategory()[pri:0, instance:testCase.SubCategoryTest@3fffff43] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.SubCategoryTest@3fffff43]" started-at="2024-11-02T13:59:01 EDT" name="beforeMethod" finished-at="2024-11-02T13:59:07 EDT" duration-ms="6439" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="updateSubCategory()[pri:0, instance:testCase.SubCategoryTest@3fffff43]" started-at="2024-11-02T13:59:07 EDT" name="updateSubCategory" finished-at="2024-11-02T13:59:10 EDT" duration-ms="2672" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateSubCategory -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.SubCategoryTest@3fffff43]" started-at="2024-11-02T13:59:10 EDT" name="afterMethode" finished-at="2024-11-02T13:59:12 EDT" duration-ms="1730" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=updateSubCategory status=SUCCESS method=SubCategoryTest.updateSubCategory()[pri:0, instance:testCase.SubCategoryTest@3fffff43] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.SubCategoryTest@3fffff43]" started-at="2024-11-02T13:59:12 EDT" name="beforeMethod" finished-at="2024-11-02T13:59:18 EDT" duration-ms="6542" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyNewSubCategory()[pri:0, instance:testCase.SubCategoryTest@3fffff43]" started-at="2024-11-02T13:59:18 EDT" name="verifyNewSubCategory" finished-at="2024-11-02T13:59:22 EDT" duration-ms="3538" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewSubCategory -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.SubCategoryTest@3fffff43]" started-at="2024-11-02T13:59:22 EDT" name="afterMethode" finished-at="2024-11-02T13:59:23 EDT" duration-ms="1152" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyNewSubCategory status=SUCCESS method=SubCategoryTest.verifyNewSubCategory()[pri:0, instance:testCase.SubCategoryTest@3fffff43] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+      </class> <!-- testCase.SubCategoryTest -->
+      <class name="testCase.ManageNewsTest">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageNewsTest@7b324585]" started-at="2024-11-02T14:00:14 EDT" name="beforeMethod" finished-at="2024-11-02T14:00:19 EDT" duration-ms="5363" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyAddedNews()[pri:0, instance:testCase.ManageNewsTest@7b324585]" started-at="2024-11-02T14:00:19 EDT" name="verifyAddedNews" finished-at="2024-11-02T14:00:21 EDT" duration-ms="2506" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddedNews -->
-        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageNewsTest@7b324585]" started-at="2024-11-02T13:34:32 EDT" name="afterMethode" finished-at="2024-11-02T13:34:33 EDT" duration-ms="637" status="PASS">
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageNewsTest@7b324585]" started-at="2024-11-02T14:00:21 EDT" name="afterMethode" finished-at="2024-11-02T14:00:22 EDT" duration-ms="860" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -657,7 +657,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethode -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageNewsTest@7b324585]" started-at="2024-11-02T13:34:33 EDT" name="beforeMethod" finished-at="2024-11-02T13:34:38 EDT" duration-ms="4702" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageNewsTest@7b324585]" started-at="2024-11-02T14:00:22 EDT" name="beforeMethod" finished-at="2024-11-02T14:00:28 EDT" duration-ms="5193" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -668,11 +668,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyDeleteNews()[pri:0, instance:testCase.ManageNewsTest@7b324585]" started-at="2024-11-02T13:34:38 EDT" name="verifyDeleteNews" finished-at="2024-11-02T13:34:40 EDT" duration-ms="1925" status="PASS">
+        <test-method signature="verifyDeleteNews()[pri:0, instance:testCase.ManageNewsTest@7b324585]" started-at="2024-11-02T14:00:28 EDT" name="verifyDeleteNews" finished-at="2024-11-02T14:00:29 EDT" duration-ms="1780" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDeleteNews -->
-        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageNewsTest@7b324585]" started-at="2024-11-02T13:34:40 EDT" name="afterMethode" finished-at="2024-11-02T13:34:40 EDT" duration-ms="794" status="PASS">
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageNewsTest@7b324585]" started-at="2024-11-02T14:00:29 EDT" name="afterMethode" finished-at="2024-11-02T14:00:30 EDT" duration-ms="857" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -683,7 +683,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethode -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageNewsTest@7b324585]" started-at="2024-11-02T13:34:40 EDT" name="beforeMethod" finished-at="2024-11-02T13:34:45 EDT" duration-ms="4826" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageNewsTest@7b324585]" started-at="2024-11-02T14:00:30 EDT" name="beforeMethod" finished-at="2024-11-02T14:00:35 EDT" duration-ms="5155" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -694,11 +694,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyEditNews()[pri:0, instance:testCase.ManageNewsTest@7b324585]" started-at="2024-11-02T13:34:45 EDT" name="verifyEditNews" finished-at="2024-11-02T13:34:48 EDT" duration-ms="2266" status="PASS">
+        <test-method signature="verifyEditNews()[pri:0, instance:testCase.ManageNewsTest@7b324585]" started-at="2024-11-02T14:00:35 EDT" name="verifyEditNews" finished-at="2024-11-02T14:00:38 EDT" duration-ms="2368" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEditNews -->
-        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageNewsTest@7b324585]" started-at="2024-11-02T13:34:48 EDT" name="afterMethode" finished-at="2024-11-02T13:34:48 EDT" duration-ms="785" status="PASS">
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageNewsTest@7b324585]" started-at="2024-11-02T14:00:38 EDT" name="afterMethode" finished-at="2024-11-02T14:00:39 EDT" duration-ms="874" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -711,7 +711,7 @@
         </test-method> <!-- afterMethode -->
       </class> <!-- testCase.ManageNewsTest -->
       <class name="testCase.LogInPageTest">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LogInPageTest@7c2b6087]" started-at="2024-11-02T13:32:44 EDT" name="beforeMethod" finished-at="2024-11-02T13:32:50 EDT" duration-ms="5565" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LogInPageTest@7c2b6087]" started-at="2024-11-02T13:58:24 EDT" name="beforeMethod" finished-at="2024-11-02T13:58:30 EDT" duration-ms="5806" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -722,7 +722,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyLogInWithExcelData(java.lang.String,java.lang.String)[pri:0, instance:testCase.LogInPageTest@7c2b6087]" started-at="2024-11-02T13:32:50 EDT" name="verifyLogInWithExcelData" data-provider="excelDataProvider" finished-at="2024-11-02T13:32:50 EDT" duration-ms="412" status="PASS">
+        <test-method signature="verifyLogInWithExcelData(java.lang.String,java.lang.String)[pri:0, instance:testCase.LogInPageTest@7c2b6087]" started-at="2024-11-02T13:58:30 EDT" name="verifyLogInWithExcelData" data-provider="excelDataProvider" finished-at="2024-11-02T13:58:31 EDT" duration-ms="558" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -738,7 +738,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogInWithExcelData -->
-        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.LogInPageTest@7c2b6087]" started-at="2024-11-02T13:32:50 EDT" name="afterMethode" finished-at="2024-11-02T13:32:51 EDT" duration-ms="778" status="PASS">
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.LogInPageTest@7c2b6087]" started-at="2024-11-02T13:58:31 EDT" name="afterMethode" finished-at="2024-11-02T13:58:32 EDT" duration-ms="905" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -749,7 +749,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethode -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LogInPageTest@7c2b6087]" started-at="2024-11-02T13:32:51 EDT" name="beforeMethod" finished-at="2024-11-02T13:32:56 EDT" duration-ms="5255" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LogInPageTest@7c2b6087]" started-at="2024-11-02T13:58:32 EDT" name="beforeMethod" finished-at="2024-11-02T13:58:39 EDT" duration-ms="7250" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -760,7 +760,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyLogInWithExcelData(java.lang.String,java.lang.String)[pri:0, instance:testCase.LogInPageTest@7c2b6087]" started-at="2024-11-02T13:32:56 EDT" name="verifyLogInWithExcelData" data-provider="excelDataProvider" finished-at="2024-11-02T13:32:57 EDT" duration-ms="447" status="PASS">
+        <test-method signature="verifyLogInWithExcelData(java.lang.String,java.lang.String)[pri:0, instance:testCase.LogInPageTest@7c2b6087]" started-at="2024-11-02T13:58:39 EDT" name="verifyLogInWithExcelData" data-provider="excelDataProvider" finished-at="2024-11-02T13:58:39 EDT" duration-ms="476" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -776,7 +776,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogInWithExcelData -->
-        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.LogInPageTest@7c2b6087]" started-at="2024-11-02T13:32:57 EDT" name="afterMethode" finished-at="2024-11-02T13:32:58 EDT" duration-ms="1066" status="PASS">
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.LogInPageTest@7c2b6087]" started-at="2024-11-02T13:58:39 EDT" name="afterMethode" finished-at="2024-11-02T13:58:41 EDT" duration-ms="1409" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -787,7 +787,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethode -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LogInPageTest@7c2b6087]" started-at="2024-11-02T13:32:58 EDT" name="beforeMethod" finished-at="2024-11-02T13:33:03 EDT" duration-ms="5159" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LogInPageTest@7c2b6087]" started-at="2024-11-02T13:58:41 EDT" name="beforeMethod" finished-at="2024-11-02T13:58:47 EDT" duration-ms="6521" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -798,11 +798,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyLogInWithValidData()[pri:0, instance:testCase.LogInPageTest@7c2b6087]" started-at="2024-11-02T13:33:03 EDT" name="verifyLogInWithValidData" finished-at="2024-11-02T13:33:05 EDT" duration-ms="1789" status="PASS">
+        <test-method signature="verifyLogInWithValidData()[pri:0, instance:testCase.LogInPageTest@7c2b6087]" started-at="2024-11-02T13:58:47 EDT" name="verifyLogInWithValidData" finished-at="2024-11-02T13:58:48 EDT" duration-ms="1012" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogInWithValidData -->
-        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.LogInPageTest@7c2b6087]" started-at="2024-11-02T13:33:05 EDT" name="afterMethode" finished-at="2024-11-02T13:33:06 EDT" duration-ms="1436" status="PASS">
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.LogInPageTest@7c2b6087]" started-at="2024-11-02T13:58:48 EDT" name="afterMethode" finished-at="2024-11-02T13:58:50 EDT" duration-ms="1406" status="PASS">
           <params>
             <param index="0">
               <value>

@@ -94,6 +94,11 @@ public class GeneralUtility {
 	        Actions actions = new Actions(driver);
 	        actions.doubleClick(element).perform();
 	    }
+	//Scroll
+		public void scrollToElement(WebDriver driver, WebElement element) {
+		    JavascriptExecutor js = (JavascriptExecutor) driver;
+		    js.executeScript("arguments[0].scrollIntoView(true);", element);
+		}
 	
 
 }

@@ -35,6 +35,7 @@ public class ManageContact {
 		String editContactAddress="TestAddress"+gu.generateCurrentDateAndTime();
 		addressField.clear();
 		addressField.sendKeys(editContactAddress);
+		gu.scrollToElement(driver, updateButtonElement);
 		updateButtonElement.click();		
 	}	
 	public String getUpdateAlert() {
