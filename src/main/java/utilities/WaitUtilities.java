@@ -30,11 +30,8 @@ public class WaitUtilities {
 		wait.until(ExpectedConditions.attributeContains(element, attribute, value));
 	}
 	//likewise do a few more waits
-	public void explicitWaitForWebElementClick(WebDriver driver,WebElement element) {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		wait.until(ExpectedConditions.elementToBeClickable(element));
-	}
-	public void explicitWaitForWebElementVisibility(WebDriver driver,WebElement element) {
+	
+	public void waitForElementToBeVisible(WebDriver driver,WebElement element) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}

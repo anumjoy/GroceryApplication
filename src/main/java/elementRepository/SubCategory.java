@@ -64,7 +64,7 @@ public class SubCategory {
 		newSubCategoryButton.click(); 
 		gu.selectDropdownWithVisibleText(categoryDropDown, "Apple");
 		subCategoryField.sendKeys(subCategoryName);
-		wu.explicitWaitForWebElementClick(driver, saveButton);
+		wu.waitForElementToBeClickable(driver, saveButton);
 		saveButton.click();
 	}
 	public String getSubCategoryName() {//return instance variable so that it can be used in assertion
@@ -96,13 +96,13 @@ public class SubCategory {
 	}
 	//search the deleted subcategory
 	public void searchDeletedElement() {
-		wu.explicitWaitForWebElementClick(driver, searchButton);
+		wu.waitForElementToBeClickable(driver, searchButton);
 		searchButton.click();
-		wu.explicitWaitForWebElementVisibility(driver, searchCategoryDropdown);
+		wu.waitForElementToBeVisible(driver, searchCategoryDropdown);
 		gu.selectDropdownWithVisibleText(searchCategoryDropdown, "Apple"); 
-		wu.explicitWaitForWebElementVisibility(driver, searchSubCategoryField);
+		wu.waitForElementToBeVisible(driver, searchSubCategoryField);
 		searchSubCategoryField.sendKeys(storedSubCategoryName);
-		wu.explicitWaitForWebElementClick(driver, clickSearch);
+		wu.waitForElementToBeClickable(driver, clickSearch);
 		clickSearch.click();
 	}
 	public String getSearchAlertText() {
