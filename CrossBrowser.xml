@@ -1,16 +1,28 @@
 <suite name="GroceryApplication" parallel="tests" thread-count="2">
+	<listeners>
+			<listener class-name="utilities.ExtenetReport" />
+			<listener class-name="utilities.RetryListener" />
+		</listeners>
 	<test name="ChromeTest">
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
 			<class name="testCase.LogInPageTest"></class>
-			<class name="testCase.SubCategoryTest"></class>			
+			<class name="testCase.SubCategoryTest"></class>
+			<class name="testCase.AdminUsersTest"></class>
+			<class name="testCase.CategoryPageTest"></class>
+			<class name="testCase.ManageContactTest"></class>
+			<class name="testCase.ManageNewsTest"></class>			
 		</classes>
 	</test>
 	<test name="FirefoxTest">
 		<parameter name="browser" value="firefox"></parameter>
 		<classes>
 			<class name="testCase.LogInPageTest"></class>
-			<class name="testCase.SubCategoryTest"></class>			
+			<class name="testCase.SubCategoryTest"></class>
+			<class name="testCase.AdminUsersTest"></class>
+			<class name="testCase.CategoryPageTest"></class>
+			<class name="testCase.ManageContactTest"></class>
+			<class name="testCase.ManageNewsTest"></class>			
 		</classes>
 	</test>
 </suite>
