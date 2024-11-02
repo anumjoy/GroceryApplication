@@ -39,7 +39,7 @@ public class GeneralUtility {
 	}
 	
 
-	public void clickJavaScriptExecutor(WebElement element, WebDriver driver) {
+	public void clickWithJavaScript(WebElement element, WebDriver driver) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click()", element);
 	}

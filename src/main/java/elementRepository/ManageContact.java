@@ -45,8 +45,7 @@ public class ManageContact {
 			updateButtonElement.click();
 	    } catch (ElementClickInterceptedException e) {
 	        // If click is intercepted, use JavaScript click as a fallback
-	        JavascriptExecutor js = (JavascriptExecutor) driver;
-	        js.executeScript("arguments[0].click();", updateButtonElement);
+	    	gu.clickWithJavaScript(updateButtonElement, driver);
 	    }
 	}	
 	public String getUpdateAlert() {

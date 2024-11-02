@@ -55,15 +55,13 @@ public class CategoryPage {
 		
 		gu.scrollToElement(driver, categoryUpdateButton);
 		wu.waitForElementToBeVisible(driver, categoryUpdateButton);
-		wu.waitForElementToBeClickable(driver, categoryUpdateButton);
-		//categoryUpdateButton.click();
+		wu.waitForElementToBeClickable(driver, categoryUpdateButton);		
 		try {
 	        // Try to click the button normally
 	        categoryUpdateButton.click();
 	    } catch (ElementNotInteractableException e) {
 	        // If click is intercepted or the element is not interactable, use JavaScript click as a fallback
-	        JavascriptExecutor js = (JavascriptExecutor) driver;
-	        js.executeScript("arguments[0].click();", categoryUpdateButton);
+	    	gu.clickWithJavaScript(categoryUpdateButton, driver);
 	    }
 	}
 	
