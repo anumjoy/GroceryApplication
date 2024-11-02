@@ -2,6 +2,7 @@ package elementRepository;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementClickInterceptedException;
+import org.openqa.selenium.ElementNotInteractableException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -42,7 +43,7 @@ public class CategoryPage {
 	}
 	
 	//Edit Category
-	public void editCategory(int row,int column) {
+	public void editCategory(int row,int column) throws ElementClickInterceptedException {
 		String editpath="//tbody//tr[" + row + "]//td[" + column + "]//i[contains(@class,'fas fa-edit')]";
 		WebElement editCategoryButton=driver.findElement(By.xpath(editpath));
 		editCategoryButton.click();
@@ -51,6 +52,7 @@ public class CategoryPage {
 		editCategoryElement.clear();
 		editCategoryElement.sendKeys(editCategoryName);
 		this.editCategoryName=editCategoryName;
+		
 		gu.scrollToElement(driver, categoryUpdateButton);
 		wu.waitForElementToBeVisible(driver, categoryUpdateButton);
 		wu.waitForElementToBeClickable(driver, categoryUpdateButton);
@@ -58,8 +60,8 @@ public class CategoryPage {
 		try {
 	        // Try to click the button normally
 	        categoryUpdateButton.click();
-	    } catch (ElementClickInterceptedException e) {
-	        // If click is intercepted, use JavaScript click as a fallback
+	    } catch (ElementNotInteractableException e) {
+	        // If click is intercepted or the element is not interactable, use JavaScript click as a fallback
 	        JavascriptExecutor js = (JavascriptExecutor) driver;
 	        js.executeScript("arguments[0].click();", categoryUpdateButton);
 	    }
