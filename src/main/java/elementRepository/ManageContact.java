@@ -2,6 +2,7 @@ package elementRepository;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementClickInterceptedException;
+import org.openqa.selenium.ElementNotInteractableException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -43,9 +44,9 @@ public class ManageContact {
 		try {
 	        // Try to click the button normally
 			updateButtonElement.click();
-	    } catch (ElementClickInterceptedException e) {
-	        // If click is intercepted, use JavaScript click as a fallback
-	    	gu.clickWithJavaScript(updateButtonElement, driver);
+	    } catch (ElementNotInteractableException e) {
+	        // If click is intercepted or the element is not interactable, use JavaScript click as a fallback
+	    	 gu.clickWithJavaScript(driver, updateButtonElement);
 	    }
 	}	
 	public String getUpdateAlert() {

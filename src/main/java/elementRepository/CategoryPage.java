@@ -61,7 +61,7 @@ public class CategoryPage {
 	        categoryUpdateButton.click();
 	    } catch (ElementNotInteractableException e) {
 	        // If click is intercepted or the element is not interactable, use JavaScript click as a fallback
-	    	gu.clickWithJavaScript(categoryUpdateButton, driver);
+	    	 gu.clickWithJavaScript(driver, categoryUpdateButton);
 	    }
 	}
 	
