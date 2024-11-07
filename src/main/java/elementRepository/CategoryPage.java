@@ -41,7 +41,7 @@ public class CategoryPage {
 	}
 
 	// Edit Category
-	public void editCategory(int row, int column) throws ElementClickInterceptedException {
+	public void editCategory(int row, int column){
 		String editpath = "//tbody//tr[" + row + "]//td[" + column + "]//i[contains(@class,'fas fa-edit')]";
 		WebElement editCategoryButton = driver.findElement(By.xpath(editpath));
 		editCategoryButton.click();
@@ -83,8 +83,7 @@ public class CategoryPage {
 	    wu.waitForElementToBeClickable(driver, deleteElement);
 	    try {
 	        deleteElement.click();
-	    } catch (ElementClickInterceptedException e) {
-	        // Use JavaScript click if regular click is intercepted
+	    } catch (ElementClickInterceptedException e) {	        
 	        gu.clickWithJavaScript(driver, deleteElement);
 	    }
 		gu.acceptAlert(driver);
