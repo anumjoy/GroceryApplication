@@ -78,7 +78,15 @@ public class CategoryPage {
 	public void deleteNews(int row, int column) {
 		String deletePath = "//table[@class='table table-bordered table-hover table-sm']//tbody//tr[" + row + "]//td["+ column + "]//i[@class='fas fa-trash-alt']";
 		WebElement deleteElement = driver.findElement(By.xpath(deletePath));
-		deleteElement.click();
+		gu.scrollToElement(driver, deleteElement);
+		wu.waitForElementToBeVisible(driver, deleteElement);
+	    wu.waitForElementToBeClickable(driver, deleteElement);
+	    try {
+	        deleteElement.click();
+	    } catch (ElementClickInterceptedException e) {
+	        // Use JavaScript click if regular click is intercepted
+	        gu.clickWithJavaScript(driver, deleteElement);
+	    }
 		gu.acceptAlert(driver);
 	}
 
