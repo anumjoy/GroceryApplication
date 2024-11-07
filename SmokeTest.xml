@@ -6,8 +6,8 @@
             </run>
         </groups>
 		<listeners>
-			<listener class-name="utilities.ExtenetReport" />
-			<listener class-name="utilities.RetryListener" />
+			<listener class-name="listeners.ExtenetReport" />
+			<listener class-name="listeners.RetryListener" />
 		</listeners>
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
@@ -22,8 +22,8 @@
             </run>
         </groups>
 		<listeners>
-			<listener class-name="utilities.ExtenetReport" />
-			<listener class-name="utilities.RetryListener" />
+			<listener class-name="listeners.ExtenetReport" />
+			<listener class-name="listeners.RetryListener" />
 		</listeners>
 		<parameter name="browser" value="firefox"></parameter>
 		<classes>

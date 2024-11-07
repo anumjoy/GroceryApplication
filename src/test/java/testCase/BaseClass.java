@@ -18,11 +18,11 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 
-public class BaseClass { //Parent class
-	WebDriver driver; //instance variable, initialize driver
+public class BaseClass {
+	WebDriver driver;
 	ScreenShotCapture sc;
-	public static Properties pro; //calling properties file
-	 //fn to load properties file
+	public static Properties pro;
+	 //load properties file
 	public static void testBasic() throws IOException {
 		pro=new Properties();
 		FileInputStream fp=new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\Properties\\Config.properties");
@@ -30,16 +30,16 @@ public class BaseClass { //Parent class
 	}
 	
 	@BeforeMethod(alwaysRun = true)
-	@Parameters("browser") //from crossbrowser
+	@Parameters("browser")
 	public void beforeMethod(String browserName) throws IOException {
 		testBasic();
 		if(browserName.equals("chrome")) {
-		driver = new ChromeDriver(); // launch webdriver
+		driver = new ChromeDriver();
 	}
 	else if(browserName.equals("firefox")) {
-		driver = new FirefoxDriver(); // launch webdriver
+		driver = new FirefoxDriver();
 	}
-		driver.get(pro.getProperty("baseurl")); //url from config file
+		driver.get(pro.getProperty("baseurl"));
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}

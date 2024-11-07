@@ -1,8 +1,8 @@
 <suite name="GroceryApplication" parallel="tests" thread-count="2">
 	<test name="ChromeTest">
 		<listeners>
-			<listener class-name="utilities.ExtenetReport" />
-			<listener class-name="utilities.RetryListener" />
+			<listener class-name="listeners.ExtenetReport" />
+			<listener class-name="listeners.RetryListener" />
 		</listeners>
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>

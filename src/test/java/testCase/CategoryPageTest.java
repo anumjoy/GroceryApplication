@@ -24,17 +24,14 @@ public class CategoryPageTest extends BaseClass {
 		String username = ExcelUtility.getStringData(1, 0);
 		String password = ExcelUtility.getStringData(1, 1);
 		hp = lp.sendLoginDetails(username, password);
-		cp = hp.clickOnCategoryButton();
-		//
+		cp = hp.clickOnCategoryButton();	
 		boolean actualTitle = cp.verifyCategoryTitle().contains("List Categories");
 		boolean expectedTitle = true;
 		Assert.assertEquals(actualTitle, expectedTitle, "Category page Title is not as expected");
-		cp.editCategory(3, 4);// edit
+		cp.editCategory(3, 4);
 		boolean actualCategoryUpdateMsg = cp.getUpdateAlertMsg().contains("Category Updated Successfully");
 		boolean expectedCategoryUpdateMsg = true;
-		Assert.assertEquals(actualCategoryUpdateMsg, expectedCategoryUpdateMsg,
-				"Update Category Alert is not as expected");
-		//
+		Assert.assertEquals(actualCategoryUpdateMsg, expectedCategoryUpdateMsg,"Update Category Alert is not as expected");		
 		String actualUpdatedCategoryName = cp.getEditedCategory();
 		String expectedUpdatedCategoryName = cp.getEditedCategoryFromTable(3, 1);
 		Assert.assertEquals(actualUpdatedCategoryName, expectedUpdatedCategoryName, Constant.cp_verifyEditCategory);

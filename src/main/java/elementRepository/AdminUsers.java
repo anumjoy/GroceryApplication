@@ -33,13 +33,10 @@ WebDriver driver;
 	WebElement saveButton;
 	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")
 	WebElement userAddedAlert;
-	//lock
 	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")
 	WebElement userStatusAlert;
 	
-	//
 	
-	//ADD User
 	public void addNewUser() {		
 		newButton.click();
 		String enterCredentials = "New" + gu.generateCurrentDateAndTime();
@@ -52,7 +49,6 @@ WebDriver driver;
 		return userAddedAlert.getText();
 	}
 	
-	//Lock User
 	public void changeUserStatus(int row,int column) {
 		String lockPath="//tbody//tr[" + row + "]//td[" + column + "]//i[contains(@class,'fa fa-unlock')]";
 		WebElement lockUserButton=driver.findElement(By.xpath(lockPath));
@@ -60,7 +56,6 @@ WebDriver driver;
 	}
 	public String getStatusAlert() {
 		return userStatusAlert.getText();
-	}
-	//check all inactive users and make them active
+	}	
 
 }
