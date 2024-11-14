@@ -7,6 +7,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Random;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -56,8 +57,7 @@ public class GeneralUtility {
 		js1.executeScript("arguments[0].blur()", element);
 	}
 	public int randon(int limit) {
-		Random random = new Random();
-		// int limit = 1000;
+		Random random = new Random();		
 		int randomNumber = random.nextInt(limit);
 		return randomNumber;
 	}
@@ -87,8 +87,7 @@ public class GeneralUtility {
 		public void selectCheckboxElement(WebElement checkBoxElement) {
 	        checkBoxElement.click(); 
 	        //boolean checkSelected = checkBoxElement.isSelected();
-	        //System.out.println(checkSelected);
-	    }
+	     }
 	//KeyBoardMouse
 		public void KeyBoardMouseElement(WebDriver driver, WebElement element) {
 	        Actions actions = new Actions(driver);
@@ -98,7 +97,13 @@ public class GeneralUtility {
 		public void scrollToElement(WebDriver driver, WebElement element) {
 		    JavascriptExecutor js = (JavascriptExecutor) driver;
 		    js.executeScript("arguments[0].scrollIntoView(true);", element);
+		    js.executeScript("arguments[0].scrollIntoView({behavior: 'smooth', inline: 'end'});", element);
 		}
+		public void scrollToElementRight(WebDriver driver, WebElement element) {
+		    JavascriptExecutor js = (JavascriptExecutor) driver;
+		    js.executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center', inline: 'end'});", element);
+		}
+		
 	
 
 }

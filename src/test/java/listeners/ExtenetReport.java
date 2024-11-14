@@ -53,7 +53,7 @@ public class ExtenetReport implements ITestListener {
 		test = reports.createTest(result.getName());
 		test.log(Status.FAIL,
 				MarkupHelper.createLabel("Name of the Failed Test Case is : " + result.getName(), ExtentColor.RED));
-		//extra lines, to get the error msg also from the test-output(index.html)
+		//to get the error msg also from the test-output(index.html)
 		if (result.getStatus() == ITestResult.FAILURE) {
 			test.fail("Test failed");
 			String failureReason = result.getThrowable().getMessage();

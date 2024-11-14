@@ -27,13 +27,12 @@ public class HomePage {
 	@FindBy(xpath="//li//p[contains(text(), 'Admin Users')]")
 	WebElement adminUsersButton;
 	@FindBy(xpath="//li//p[text()='Manage Users']")
-	WebElement manageUsersElement;
+	WebElement manageUsersElement;	
 	
-	//method to get a text of home page to validate login is success
 	public String gethomePageText() {
 		return homePageText.getText();		
 	}
-	//click on subcategory in the homepage to create new subcategory
+	
 	public SubCategory clickOnSubCategoryButton() {
 		subCategoryButton.click();
 		return new SubCategory(driver);

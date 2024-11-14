@@ -17,29 +17,26 @@ public class SubCategory {
 	String storedSubCategoryName;
 	String editSubCategoryName;
 	
-	GeneralUtility gu=new GeneralUtility();//calling a fn from generalutility
+	GeneralUtility gu=new GeneralUtility();
 	WaitUtilities wu=new WaitUtilities();
 
-	public SubCategory(WebDriver driver) { // constructor, this will be called in TestNG class
+	public SubCategory(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath="//a[@class='btn btn-rounded btn-danger']")//new button
+	@FindBy(xpath="//a[@class='btn btn-rounded btn-danger']")
 	WebElement newSubCategoryButton;
-	@FindBy(id="cat_id")//category dropdown
-	WebElement categoryDropDown;
-	
-	@FindBy(id="subcategory")//Sub Category field
+	@FindBy(id="cat_id")
+	WebElement categoryDropDown;	
+	@FindBy(id="subcategory")
 	WebElement subCategoryField;
-	@FindBy(xpath="//button[text()='Save']") //Save button
+	@FindBy(xpath="//button[text()='Save']")
 	WebElement saveButton; 
 	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")
-	WebElement alertElement;
-	
+	WebElement alertElement;	
 	@FindBy(xpath="//table[@class='table table-bordered table-hover table-sm']//tbody//tr")
-	List<WebElement> subCategoryTableSize;
-	//Search 
+	List<WebElement> subCategoryTableSize;	
 	@FindBy(xpath="//a[@class='btn btn-rounded btn-primary']")
 	WebElement searchButton;
 	@FindBy(xpath="//select[@class='form-control selectpicker']")
@@ -50,7 +47,6 @@ public class SubCategory {
 	WebElement clickSearch;
 	@FindBy(xpath="//table[@class='table table-bordered table-hover table-sm']//tbody//tr//td[@colspan='5']//span[@id='res']//center[contains(text(),'RESULT NOT FOUND')]")
 	WebElement searchAlert;	
-	//Edit
 	@FindBy(id="subcategory")
 	WebElement editSubCategoryElement;
 	@FindBy(xpath="//button[@name='update']")
@@ -60,7 +56,7 @@ public class SubCategory {
 	
 	public void addNewSubCategory() {
 		String SubCategoryName="Apple"+gu.generateCurrentDateAndTime();
-		this.subCategoryName=SubCategoryName;//copying to instance variable
+		this.subCategoryName=SubCategoryName;
 		newSubCategoryButton.click(); 
 		gu.selectDropdownWithVisibleText(categoryDropDown, "Apple");
 		subCategoryField.sendKeys(subCategoryName);
@@ -80,7 +76,7 @@ public class SubCategory {
 		WebElement element=driver.findElement(By.xpath(path));
 		return element.getText();
 	}
-	//Store a SubCategory before deletion
+	//Store SubCategory
 	public String storedSubCategory(int row,int column) {
 		String elementPath="//table[@class='table table-bordered table-hover table-sm']//tbody//tr["+row+"]//td["+column+"]";
 		WebElement subCategoryElement =driver.findElement(By.xpath(elementPath));
@@ -121,8 +117,7 @@ public class SubCategory {
 		updateButton.click();		
 		
 	}
-	public String getUpdateAlert() {
-		//System.out.println(updateAlert.getText()); Sub Category Updated Successfully
+	public String getUpdateAlert() {		
 		return updateAlert.getText();
 	}
 	

@@ -39,7 +39,7 @@ public class SubCategoryTest extends BaseClass {
 
 	@Test
 	  // Delete
-	  public void deleteSubCategory() throws IOException {
+	  public void deleteSubCategoryFunctionality() throws IOException {
 		lp=new LogInPage(driver);		
 		String username = ExcelUtility.getStringData(1, 0);
 		String password = ExcelUtility.getStringData(1, 1);
@@ -48,18 +48,18 @@ public class SubCategoryTest extends BaseClass {
 		String savedSubCategoryName=sc.storedSubCategory(2, 1); //stored	  
 		String actualSubCategoryDeleteAlert=sc.deleteSubCategoryTableElement(2, 5);//deleted
 		String expectedSubCategoryDeleteAlert="Do you want to delete this Sub Category?";
-		Assert.assertEquals(actualSubCategoryDeleteAlert, expectedSubCategoryDeleteAlert,Constant.sc_deleteSubCategory);
+		Assert.assertEquals(actualSubCategoryDeleteAlert, expectedSubCategoryDeleteAlert,Constant.sc_deleteSubCategoryFunctionality);
 		//Search
 		hp.clickOnSubCategoryButton();
 		sc.searchDeletedElement();
 		String actualSearchCreatedAlert = sc.getSearchAlertText(); // Search Alert
 		String expectedSearchCreatedAlert = ".........RESULT NOT FOUND.......";
-		Assert.assertEquals(actualSearchCreatedAlert, expectedSearchCreatedAlert, Constant.sc_deleteSubCategory);
+		Assert.assertEquals(actualSearchCreatedAlert, expectedSearchCreatedAlert, Constant.sc_deleteSubCategoryFunctionality);
 	}
 
 	@Test
 	// Edit SubCategory
-	public void updateSubCategory() throws IOException {
+	public void updateSubCategoryFunctionality() throws IOException {
 		lp = new LogInPage(driver);		
 		String username = ExcelUtility.getStringData(1, 0);
 		String password = ExcelUtility.getStringData(1, 1);
@@ -69,7 +69,7 @@ public class SubCategoryTest extends BaseClass {
 		sc.editSubCategory();
 		boolean actualUpdateAlert = sc.getUpdateAlert().contains("Sub Category Updated Successfully");
 		boolean expectedUpdateAlert = true;
-		Assert.assertEquals(actualUpdateAlert, expectedUpdateAlert, Constant.sc_updateSubCategory);
+		Assert.assertEquals(actualUpdateAlert, expectedUpdateAlert, Constant.sc_updateSubCategoryFunctionality);
 	}
 
 }

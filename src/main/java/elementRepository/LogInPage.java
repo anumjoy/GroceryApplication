@@ -18,7 +18,7 @@ public class LogInPage {
 	GeneralUtility gu=new GeneralUtility();//calling a fn from generalutility
 	WaitUtilities wu=new WaitUtilities();
 
-	public LogInPage(WebDriver driver) { // constructor, this will be called in TestNG class
+	public LogInPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
@@ -35,12 +35,12 @@ public class LogInPage {
 		userNameField.sendKeys(username);
 		passwordField.sendKeys(password);
 		signInButton.click();
-		return new HomePage(driver); //calling homepage constructor
+		return new HomePage(driver);
 	}
 	
 	//method to get the text of Alert
 		public String getAlertText() {			
-			return alertBox.getText().replace("×", "").trim(); //trim() to ensure no extra leading or trailing spaces that cause the comparison to fail.
+			return alertBox.getText().replace("×", "").trim(); 
 			
 		}
 }

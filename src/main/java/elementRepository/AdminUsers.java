@@ -1,6 +1,10 @@
 package elementRepository;
 
+import java.util.NoSuchElementException;
+import java.util.concurrent.TimeoutException;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.ElementNotInteractableException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -49,11 +53,17 @@ WebDriver driver;
 		return userAddedAlert.getText();
 	}
 	
-	public void changeUserStatus(int row,int column) {
-		String lockPath="//tbody//tr[" + row + "]//td[" + column + "]//i[contains(@class,'fa fa-unlock')]";
+	public void changeUserStatus(int row,int column) {		
+		String lockPath="//tbody//tr[" + row + "]//td[" + column + "]//i[contains(@class,'fa fa-unlock')]";	
+		wu.waitForElementToBeVisibleByXpath(driver, lockPath);
 		WebElement lockUserButton=driver.findElement(By.xpath(lockPath));
-		lockUserButton.click();		
-	}
+		gu.scrollToElement(driver, lockUserButton);
+		wu.waitForElementToBeVisible(driver, lockUserButton);
+		wu.waitForElementToBeClickable(driver, lockUserButton);
+		wu.waitForLoadingToComplete(driver); 
+		lockUserButton.click();
+		wu.waitForLoadingToComplete(driver); 
+	}	
 	public String getStatusAlert() {
 		return userStatusAlert.getText();
 	}	

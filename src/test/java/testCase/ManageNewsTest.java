@@ -18,7 +18,7 @@ public class ManageNewsTest extends BaseClass {
 
 	@Test
 	// Add News
-	public void verifyAddedNews() throws IOException {
+	public void verifyAddNewsFunctionality() throws IOException {
 		lp = new LogInPage(driver);
 		String username=ExcelUtility.getStringData(1, 0);
 		String password=ExcelUtility.getStringData(1, 1);
@@ -27,12 +27,12 @@ public class ManageNewsTest extends BaseClass {
 		mn.addNews();
 		boolean actualNewsAlert = mn.getNewsAlert().contains("News Created Successfully");
 		boolean expectedNewsAlert = true;
-		Assert.assertEquals(actualNewsAlert, expectedNewsAlert, Constant.mn_verifyAddedNews);
+		Assert.assertEquals(actualNewsAlert, expectedNewsAlert, Constant.mn_verifyAddNewsFunctionality);
 	}
 	
 	@Test
 	// Edit News
-	public void verifyEditNews() throws IOException {
+	public void verifyEditNewsFunctionality() throws IOException {
 		lp = new LogInPage(driver);		
 		String username=ExcelUtility.getStringData(1, 0);
 		String password=ExcelUtility.getStringData(1, 1);
@@ -41,12 +41,12 @@ public class ManageNewsTest extends BaseClass {
 		mn.editNews(2, 2);
 		boolean actualUpdateAlert = mn.getNewsUpdateAlert().contains("News Updated Successfully");
 		boolean expectedUpdateAlert = true;
-		Assert.assertEquals(actualUpdateAlert, expectedUpdateAlert, Constant.mn_verifyEditNews);		
+		Assert.assertEquals(actualUpdateAlert, expectedUpdateAlert, Constant.mn_verifyEditNewsFunctionality);		
 	}
 	
 	@Test
 	// Delete News
-	public void verifyDeleteNews() throws IOException {
+	public void verifyDeleteNewsFunctionality() throws IOException {
 		lp = new LogInPage(driver);		
 		String username=ExcelUtility.getStringData(1, 0);
 		String password=ExcelUtility.getStringData(1, 1);
@@ -55,7 +55,7 @@ public class ManageNewsTest extends BaseClass {
 		mn.deleteNews(4, 2);
 		boolean actualDeleteAlert = mn.getNewsDeleteAlert().contains("News Deleted Successfully");
 		boolean expectedDeleteAlert = true;
-		Assert.assertEquals(actualDeleteAlert, expectedDeleteAlert, Constant.mn_verifyDeleteNews);
+		Assert.assertEquals(actualDeleteAlert, expectedDeleteAlert, Constant.mn_verifyDeleteNewsFunctionality);
 	}	
 	
 }

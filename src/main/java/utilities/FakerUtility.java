@@ -29,6 +29,13 @@ public class FakerUtility {
     public  int generateRandomNumber() {
     	return faker.number().randomDigit();
     }
+    
+    // to print faker email
+    public static void main(String args[]) {
+    	FakerUtility obj=new FakerUtility();
+    	System.out.println(obj.generateEmail());
+    	
+    }
 
    
 }

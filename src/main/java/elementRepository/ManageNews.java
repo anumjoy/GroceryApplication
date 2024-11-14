@@ -28,12 +28,10 @@ public class ManageNews {
 	WebElement saveButton;
 	@FindBy(xpath = "//div[@class=\"alert alert-success alert-dismissible\"]")
 	WebElement alertElement;
-	// edit
 	@FindBy(xpath = "//button[@name='update']")
 	WebElement updateButton;
 	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
-	WebElement updateAlertElement;
-	// Delete
+	WebElement updateAlertElement;	
 	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
 	WebElement deleteAlertElement;
 

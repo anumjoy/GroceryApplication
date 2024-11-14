@@ -4,25 +4,25 @@
   <test thread-count="2" parallel="tests" name="ChromeTest(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCase.LogInPageTest">
+      <class name="testCase.AdminUsersTest">
         <methods>
           <include name="afterMethode"/>
           <include name="beforeMethod"/>
-          <include name="verifyLogInWithExcelData"/>
+          <include name="changeUserStatus"/>
         </methods>
-      </class> <!-- testCase.LogInPageTest -->
+      </class> <!-- testCase.AdminUsersTest -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
   <test thread-count="2" parallel="tests" name="FirefoxTest(failed)">
     <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="testCase.LogInPageTest">
+      <class name="testCase.AdminUsersTest">
         <methods>
           <include name="afterMethode"/>
           <include name="beforeMethod"/>
-          <include name="verifyLogInWithExcelData"/>
+          <include name="changeUserStatus"/>
         </methods>
-      </class> <!-- testCase.LogInPageTest -->
+      </class> <!-- testCase.AdminUsersTest -->
     </classes>
   </test> <!-- FirefoxTest(failed) -->
 </suite> <!-- Failed suite [GroceryApplication] -->

@@ -39,13 +39,10 @@ public class ManageContact {
 		addressField.clear();
 		addressField.sendKeys(editContactAddress);
 		gu.scrollToElement(driver, updateButtonElement);
-		wu.waitForElementToBeClickable(driver, updateButtonElement);
-		//updateButtonElement.click();	
-		try {
-	        // Try to click the button normally
+		wu.waitForElementToBeClickable(driver, updateButtonElement);		
+		try {	        
 			updateButtonElement.click();
-	    } catch (ElementNotInteractableException e) {
-	        // If click is intercepted or the element is not interactable, use JavaScript click as a fallback
+	    } catch (ElementNotInteractableException e) {	        
 	    	 gu.clickWithJavaScript(driver, updateButtonElement);
 	    }
 	}	

@@ -20,12 +20,8 @@ public class ScreenShotCapture {
 		if (!f1.exists()) {
 			f1.mkdirs();// mkdir --> will create folder using java
 		}
-
-		String timeStamp = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss").format(new Date());// date time capture using
-																							// java
-
-		File finalDestination = new File(
-				System.getProperty("user.dir") + "\\OutputScreenshots\\" + name + "_" + timeStamp + ".png");
+		String timeStamp = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss").format(new Date());// date time capture using java
+		File finalDestination = new File(System.getProperty("user.dir") + "\\OutputScreenshots\\" + name + "_" + timeStamp + ".png");
 		FileHandler.copy(screenShot, finalDestination);// copy screenshot from temp path to project folder
 
 	}

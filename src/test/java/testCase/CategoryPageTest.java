@@ -19,7 +19,7 @@ public class CategoryPageTest extends BaseClass {
 
 	@Test
 	// Edit Category
-	public void verifyEditCategory() throws IOException {
+	public void verifyCategoryEditFunctionality() throws IOException {
 		lp = new LogInPage(driver);
 		String username = ExcelUtility.getStringData(1, 0);
 		String password = ExcelUtility.getStringData(1, 1);
@@ -34,12 +34,12 @@ public class CategoryPageTest extends BaseClass {
 		Assert.assertEquals(actualCategoryUpdateMsg, expectedCategoryUpdateMsg,"Update Category Alert is not as expected");		
 		String actualUpdatedCategoryName = cp.getEditedCategory();
 		String expectedUpdatedCategoryName = cp.getEditedCategoryFromTable(3, 1);
-		Assert.assertEquals(actualUpdatedCategoryName, expectedUpdatedCategoryName, Constant.cp_verifyEditCategory);
+		Assert.assertEquals(actualUpdatedCategoryName, expectedUpdatedCategoryName, Constant.cp_verifyCategoryEditFunctionality);
 	}
 
 	@Test
 	// Delete
-	public void verifyDeleteCategory() throws IOException {
+	public void verifyDeleteCategoryFunctionality() throws IOException {
 		lp = new LogInPage(driver);
 		String username = ExcelUtility.getStringData(1, 0);
 		String password = ExcelUtility.getStringData(1, 1);
@@ -48,6 +48,6 @@ public class CategoryPageTest extends BaseClass {
 		cp.deleteNews(4, 4);
 		boolean actualCategoryDeleteMsg = cp.getDeleteAlert().contains("Category Deleted Successfully");
 		boolean expectedCategoryDeleteMsg = true;
-		Assert.assertEquals(actualCategoryDeleteMsg, expectedCategoryDeleteMsg, Constant.cp_verifyDeleteCategory);
+		Assert.assertEquals(actualCategoryDeleteMsg, expectedCategoryDeleteMsg, Constant.cp_verifyDeleteCategoryFunctionality);
 	}
 }
